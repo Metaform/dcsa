@@ -6,6 +6,9 @@ description: >-
      Page description for heading and indexes.
 ---
 
+
+![Use relative URLs](control-and-data-planes.svg)
+
 ## Heading
 
 Edit this template to create your new page.
