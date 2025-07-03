@@ -1,6 +1,6 @@
 ---
 title: "Agenda"
-linkTitle: "Milan June 2025 Event Agenda"
+linkTitle: "Agenda"
 weight: 200
 description: >-
      Milan June 2025 Event Agenda  
