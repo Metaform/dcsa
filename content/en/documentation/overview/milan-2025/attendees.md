@@ -1,7 +1,7 @@
 ---
 title: "Attendees"
 linkTitle: "Attendees"
-weight: 100
+weight: 300
 description: >-
      Attendees of June Milan 2025 event
 ---
