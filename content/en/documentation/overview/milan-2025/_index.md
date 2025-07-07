@@ -48,7 +48,6 @@ Babak Jahromi summarized the spirit of the workshop:
 
 ---
 📚 [View the full introduction to the European Cloud Accelerator →](./agenda/)  
-📚 [View the full introduction to the European Cloud Accelerator →](./agenda/)  
 🔗 [Get started with Eclipse Dataspace Components](https://github.com/eclipse-edc)
 📄 [ Download the June 2025 Workshop PDF](./June%202025%20-%20Milan%20-%20Cloud%20Accelerator%20%20Workshop%20-%20v2.pdf)
 
