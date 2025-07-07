@@ -5,9 +5,6 @@ weight: 900
 description: >-
      Fulcrum at June Milan 2025 event
 ---
-# Opiquad and Fulcrum  
-📅 June 30, 2025 | 🕖 07:43  
-
 **Fulcrum** is an open-source, European initiative designed to transform the fragmented landscape of local cloud providers into a unified, federated **“cloud continuum.”**  
 It enables regional cloud and telecom providers to **commercially trade compute, network, and higher-level services** while maintaining **sovereignty**, **interoperability**, and **compliance** with emerging EU trust and data regulations.
 
