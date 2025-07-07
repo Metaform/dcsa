@@ -3,12 +3,9 @@ title: "Industrial Data Sharing – Erich Barnstedt"
 linkTitle: "Industrial Data Sharing"
 weight: 600
 description: >-
-     Industrial Data Sharing – Erich Barnstedt
----
-# Industrial Data Sharing – Erich Barnstedt  
-📅 June 28, 2025 | 🕘 09:22  
-
 Erich Barnstedt’s session focused on the urgent need for **interoperable, standardized digital infrastructures in manufacturing**, driven by the upcoming **2027 Digital Product Passport (DPP)** regulation. He emphasized the critical role of **open source**, **semantic standards**, and **industry collaboration** to enable compliance, resilience, and new business opportunities—especially for small and medium-sized manufacturers.
+---
+📅 June 28, 2025 | 🕘 09:22  
 
 ---
 
