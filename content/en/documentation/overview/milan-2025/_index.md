@@ -3,7 +3,7 @@ title: "Milan Workshop Summary – June 2025"
 linkTitle: "Milan June 2025 Event"
 weight: 100
 description: >-
-The European Cloud Accelerator community gathered in Milan in June 2025 for a multi-day workshop focused on advancing the vision of open, sovereign, and interoperable data spaces. The event brought together cloud providers, industrial data experts, open-source contributors, and policymakers to align efforts and accelerate progress across the ecosystem.
+  The European Cloud Accelerator community gathered in Milan in June 2025 for a multi-day workshop focused on advancing the vision of open, sovereign, and interoperable data spaces. The event brought together cloud providers, industrial data experts, open-source contributors, and policymakers to align efforts and accelerate progress across the ecosystem.
 ---
 
 ## Key Themes
