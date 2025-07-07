@@ -1,11 +1,9 @@
 ---
-title: "Keynote"
+title: "Keynote – Prof. Boris Otto (Fraunhofer ISST)"
 linkTitle: "Keynote"
 weight: 400
-description: >-
-     Keynote – Prof. Boris Otto (Fraunhofer ISST)
+description: >-     
 ---
-# Keynote – Prof. Boris Otto (Fraunhofer ISST)
 
 ## Summary
 
