@@ -1,15 +1,10 @@
 ---
-title: "Attendees"
+title: "Introduction & Attendees"
 linkTitle: "Attendees"
 weight: 300
 description: >-
-     Attendees of June Milan 2025 event
+     This page highlights selected participants of the European Cloud Accelerator community and their roles in advancing trusted, interoperable data sharing across Europe.
 ---
-
-# Introductions & Attendees
-
-This page highlights selected participants of the European Cloud Accelerator community and their roles in advancing trusted, interoperable data sharing across Europe.
-
 ## Participant Introductions
 
 - **Alexis Corcoran** *(Microsoft)*  
