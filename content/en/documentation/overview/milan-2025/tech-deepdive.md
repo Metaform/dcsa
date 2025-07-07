@@ -5,7 +5,6 @@ weight: 1100
 description: >-
      Technical Deep Dive EDC - June Milan 2025 event
 ---
-# Technical Deep Dive – Eclipse Dataspace Components (EDC)  
 📅 June 30, 2025 | 🕖 07:41  
 **Presenter:** Jim Marino
 
