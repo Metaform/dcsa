@@ -1,9 +1,9 @@
 ---
-title: "Attendees"
-linkTitle: "Attendees"
+title: "Industrial Data Sharing – Erich Barnstedt"
+linkTitle: "Industrial Data Sharing"
 weight: 600
 description: >-
-     Attendees of June Milan 2025 event
+     Industrial Data Sharing – Erich Barnstedt
 ---
 # Industrial Data Sharing – Erich Barnstedt  
 📅 June 28, 2025 | 🕘 09:22  
