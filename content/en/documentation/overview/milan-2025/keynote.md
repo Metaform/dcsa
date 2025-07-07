@@ -1,9 +1,9 @@
 ---
-title: "Attendees"
-linkTitle: "Attendees"
+title: "Keynote"
+linkTitle: "Keynote"
 weight: 400
 description: >-
-     Attendees of June Milan 2025 event
+     Keynote – Prof. Boris Otto (Fraunhofer ISST)
 ---
 # Keynote – Prof. Boris Otto (Fraunhofer ISST)
 
