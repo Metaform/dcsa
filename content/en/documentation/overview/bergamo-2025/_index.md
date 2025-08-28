@@ -20,7 +20,7 @@ The ECA’s mission remains unchanged: to turn trusted, sovereign and interopera
 | When                     | Track                    | Highlights                                                                                                                                   |
 |---------------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Mon 6 Oct – 09:30         | Plenary kick-off         | Welcome + project overview for both business & technical stakeholders                                                                         |
-| After lunch (13:00)       | Business track (½ day)   | • IDC briefing on the €-scale market for data-spaces hosting under the EU Data Act<br>• Fireside perspectives /w BMW, Manufacturing-X, Catena-X, OPC Foundation & other industries |
+| 10:30 AM                  | Business track (rest of the day)   | • IDC briefing on the €-scale market for data-spaces hosting under the EU Data Act<br>• Fireside perspectives /w BMW, Manufacturing-X, Catena-X, OPC Foundation & other industries |
 | Mon 6 afternoon → Tue 7   | Technical track (1½ days)| • Deep dive on Eclipse Dataspace Components (EDC) architecture & roadmap:<br>&nbsp;&nbsp;1) Multi-tenancy<br>&nbsp;&nbsp;2) Industrial data plane using OPC UA/AAS<br>• Hands-on sessions with Fulcrum, Liqo and multi-cloud deployment patterns<br>• Break-outs on multi-tenancy, policy enforcement and DevOps pipelines |
 
 *(A detailed agenda will follow; expect doors to close by 16:00 CET on Tue 7 Oct.)*
