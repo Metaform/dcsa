@@ -71,11 +71,9 @@ Places are limited. Please confirm your attendance by **Friday 19 September** vi
 | **Borgo Brianteo \*\***        | 3 km / 5 min taxi      | Via Armando Diaz 25/A, 24036 Ponte San Pietro [hotelborgobrianteo.com](http://hotelborgobrianteo.com) |
 | **Bes Hotel Bergamo West \*\***| 5 km / 10 min taxi     | Via Fausto Radici 3, 24030 Mozzo [Trip.com](https://www.trip.com)       |
 | **Settecento Hotel \*\***      | 2.5 km / 7 min taxi    | Via Milano 3, 24030 Presezzo [Booking.com](https://www.booking.com)     |
-*(Prefer to stay at the airport? The Winter Garden Hotel in Grassobbio is 2 km from BGY.)*
+
 Notes:
-
 *(Prefer to stay at the airport? The Winter Garden Hotel in Grassobbio is 2 km from BGY.)*
-
 More lodging options may be listed, so please check back.
 
 ---
