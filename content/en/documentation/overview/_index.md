@@ -13,7 +13,7 @@ cascade:
 
 The **European Cloud Accelerator (ECA)** is a collaborative initiative to enable a new era of *trusted, sovereign, and interoperable data sharing* across Europe’s digital landscape.
 
-At its core, the ECA is about helping organizations across sectors—public, private, and academic—build and adopt **data spaces**: decentralized, policy-driven ecosystems where data can be shared under clear terms, across company and cloud boundaries, without losing control or sovereignty.
+At its core, the ECA is about helping organizations across sectors—public, private, and academic—build and adopt **dataspaces**: decentralized, policy-driven ecosystems where data can be shared under clear terms, across company and cloud boundaries, without losing control or sovereignty.
 
 ## Why It Matters
 
@@ -21,7 +21,7 @@ Data is the raw material of the digital economy—but it only becomes valuable w
 
 The European Cloud Accelerator aims to:
 
-- **Scale data spaces as-a-service** across Europe’s cloud and edge infrastructure
+- **Scale dataspaces as-a-service** across Europe’s cloud and edge infrastructure
 - **Create economic opportunities** for European cloud and technology providers
 - **Support compliance** with key European legislation (e.g. the Data Act, Digital Product Passport, Carbon Accounting)
 - **Foster innovation** in AI, sustainability, manufacturing, logistics, and beyond
@@ -31,7 +31,7 @@ The European Cloud Accelerator aims to:
 We follow several core principles inspired by shared values across the European data and cloud communities:
 
 1. **Trust-by-design**  
-   Data spaces establish trust between participants using verifiable credentials, usage policies, and decentralized identity mechanisms.
+   dataspaces establish trust between participants using verifiable credentials, usage policies, and decentralized identity mechanisms.
 
 2. **Your data, your rules**  
    Data sovereignty means participants stay in control of who uses their data, how, for how long, and where. Data doesn’t flow through intermediaries—it flows peer-to-peer.
@@ -49,7 +49,7 @@ We follow several core principles inspired by shared values across the European 
 
 The ECA is not a top-down project—it’s a community of contributors working across multiple layers:
 
-- **Cloud and Edge providers**: Offering scalable, sovereign infrastructure for hosting data spaces
+- **Cloud and Edge providers**: Offering scalable, sovereign infrastructure for hosting dataspaces
 - **Software developers and open-source communities**: Building and extending reusable components
 - **Standards bodies and policymakers**: Shaping regulation and interoperability frameworks
 - **Industry consortia and domain experts**: Defining real-world use cases and requirements
@@ -64,5 +64,5 @@ Let’s build it—together.
 ---
 
 🌐 Learn more: [https://github.com/eclipse-edc](https://github.com/eclipse-edc)  
-📄 Key reference: ISO/IEC 20151 – Definition of Data Spaces  
+📄 Key reference: ISO/IEC 20151 – Definition of dataspaces  
 🤝 Join a working group: IDSA, Gaia-X, DSSC, OPC Foundation, iSHARE, Catena-X
