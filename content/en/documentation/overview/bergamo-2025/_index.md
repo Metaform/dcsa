@@ -63,12 +63,16 @@ Places are limited. Please confirm your attendance by **Friday 19 September** vi
 ---
 
 ## Nearby Hotels (Hand-picked)
-
+                                               |
 | Hotel                       | Distance / travel time | Address                                                                 |
 |------------------------------|------------------------|-------------------------------------------------------------------------|
-| **Borgo Brianteo ****        | 3 km / 5 min taxi      | Via Armando Diaz 25/A, 24036 Ponte San Pietro [hotelborgobrianteo.com](http://hotelborgobrianteo.com) |
-| **Bes Hotel Bergamo West ****| 5 km / 10 min taxi     | Via Fausto Radici 3, 24030 Mozzo [Trip.com](https://www.trip.com)       |
-| **Settecento Hotel ****      | 2.5 km / 7 min taxi    | Via Milano 3, 24030 Presezzo [Booking.com](https://www.booking.com)     |
++ | **NH Bergamo (4 \*)**       | — (central Bassa)      | Via Pietro Paleocapa 1/G, 24122 Bergamo BG, Italy. Stylish 4-star hotel in the heart of Bergamo Bassa, ~300 m from the train station and Papa Giovanni XXIII Conference Centre. Features 88 rooms, free Wi-Fi, buffet breakfast, gym, open-bar, meeting rooms (for up to 100), parking, and pet-friendly. :contentReference[oaicite:1]{index=1} |
++ | **Palazzo Santo Spirito (4 \* Superior)** | — (central Città Bassa) | Via Torquato Tasso 82, 24121 Bergamo, Italy. A 4-star superior hotel in a converted 14th-century convent. About 80 rooms and suites, with spa (sauna, hot-tub, steam room), restaurant, bar, private garden/courtyard, parking (~€15/day), pet-friendly, excellent central location. :contentReference[oaicite:2]{index=2} |
+| **Borgo Brianteo \*\***        | 3 km / 5 min taxi      | Via Armando Diaz 25/A, 24036 Ponte San Pietro [hotelborgobrianteo.com](http://hotelborgobrianteo.com) |
+| **Bes Hotel Bergamo West \*\***| 5 km / 10 min taxi     | Via Fausto Radici 3, 24030 Mozzo [Trip.com](https://www.trip.com)       |
+| **Settecento Hotel \*\***      | 2.5 km / 7 min taxi    | Via Milano 3, 24030 Presezzo [Booking.com](https://www.booking.com)     |
+*(Prefer to stay at the airport? The Winter Garden Hotel in Grassobbio is 2 km from BGY.)*
+Notes:
 
 *(Prefer to stay at the airport? The Winter Garden Hotel in Grassobbio is 2 km from BGY.)*
 
