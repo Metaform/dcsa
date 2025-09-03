@@ -1,5 +1,5 @@
 ---
-title: "Bergamo Workshop – October 2025"
+title: "European Cloud Accelerator Workshop"
 linkTitle: "Bergamo October 2025 Event"
 weight: 100
 description: >-
