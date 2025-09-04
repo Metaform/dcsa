@@ -5,7 +5,7 @@ weight: 100
 description: >-
   Join The European Cloud Accelerator community  in Bergamo in October 2025 for a 2-day workshop focused on advancing the vision of open, sovereign, and interoperable dataspaces.
 ---
-# Bergamo, Italy, Oct 6th and 7th, 2025
+# Bergamo, Italy, Oct 6th & 7th, 2025
 
 Dear colleague,
 
