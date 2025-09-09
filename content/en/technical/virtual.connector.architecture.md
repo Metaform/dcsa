@@ -1,4 +1,3 @@
-
 ## Introduction
 
 > This document follows the terms and definitions laid out in the [Dataspace Protocol Specification (DSP)](https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1-RC4/#terminology). Readers should be familiar with that document and its companion, [Decentralized Claims Protocol (DCP)](https://github.com/eclipse-dataspace-dcp/decentralized-claims-protocol)
@@ -21,7 +20,7 @@ columns 3
   CIF ["Cloud Infrastructure"]:3
 ```
 
-Many organizations participate in multiple dataspaces. An organization may do this using a single identity (that is, using an identifier such as a [DID](https://www.w3.org/TR/did/upcoming/)) or different identities. The system we are developing supports these multiplicities through ***service virtualization***: a single software deployment can enable an isolation environment to process requests for different participants and dataspace contexts.  We use the term virtualization over muti-tenancy for several reasons.  First, multi-tenancy is too ambiguous and has been used to denote different architectures. More importantly, multi-tenancy does not accurately describe the architecture this document lays out. As we will see, while connector services have the concept of an isolation context, it does not directly map to the concept of a "tenant." Instead, tenant management is externalized from the core connector and managed by an orchestration layer termed the ***Connector Fabric Manager (CFM).*** More on this later.    
+Many organizations participate in multiple dataspaces. An organization may do this using a single identity (for example, an identifier such as a [DID](https://www.w3.org/TR/did/upcoming/)) or different identities. The system we are developing supports these multiplicities through ***service virtualization***: a single software deployment can enable an isolation environment to process requests for different participants and dataspace contexts.  We use the term virtualization over muti-tenancy for several reasons.  First, multi-tenancy is too ambiguous and has been used to denote different architectures. More importantly, multi-tenancy does not accurately describe the architecture this document lays out. As we will see, while connector services have the concept of an isolation context, it does not directly map to the concept of a "tenant." Instead, tenant management is externalized from the core connector and managed by an orchestration layer termed the ***Connector Fabric Manager (CFM).*** More on this later.    
 
 ## Service Virtualization Model
 
@@ -57,7 +56,7 @@ style Cell fill:#FFD676,stroke:#FFBF00,stroke-width:1px
 
 ```
 
-A **Tenant** represents an organization or entity that participates in one or more dataspaces. A **Participant Profile** exists for each dataspace the tenant participates in. The participant profile is associated with an **Identifier**, at least one **Dataspace Profile**, and at least one **Virtual Participant Agent (VPA)**. 
+A **Tenant** represents an organization or entity that participates in one or more dataspaces. A tenant has one or more **Participant Profiles.** Each profile is associated with an **Identifier**, at least one **Dataspace Profile**, and at least one **Virtual Participant Agent (VPA)**. 
 
 A Dataspace Profile includes a set of interoperable policies and DSP protocol version. 
 
@@ -67,7 +66,7 @@ A **User** performs management operations against a VPA using an RBAC model base
 
 The service virtualization layers in the control plane and data plane implement runtime isolation for each VPA. Importantly, they do not contain the concept of a tenant; the CFM orchestrator manages tenants.
 
-The control and data planes use the VPA as the unit of runtime isolation. However, the services are loosely coupled through the [Data Plane Signaling Protocol]().  As will be detailed later, control plane and data plane deployments are typically remote and mapped by Participant Profile.
+The control and data planes use the VPA as the unit of runtime isolation. However, the services are loosely coupled through the [Data Plane Signaling Protocol]().  As will be detailed later, control plane and data plane deployments are typically remote and mapped by participant profile.
 
 #### The Participant Profile
 
@@ -89,7 +88,7 @@ In this scenario, Acme uses a single DID across multiple dataspaces, resulting i
 
 #### Virtual Participant Agents
 
- A VPA defines a runtime context that is deployed when a Participant Profile is provisioned. Let's consider a simple case where Acme participates in one dataspace. Returning to the logical systems architecture, VPAs for the control plane, credential service, and data plane(s) will be provisioned. This results in the creation of three VPA *types*:
+ A VPA defines a runtime context deployed when a participant profile is provisioned. Let's consider a simple case where Acme participates in one dataspace. Returning to the logical systems architecture, VPAs for the control plane, credential service, and data plane(s) will be provisioned. This results in the creation of three VPA *types*:
 
 - A Credential Service VPA
 - A Control Plane VPA
@@ -101,11 +100,11 @@ VPAs are linked through network, transport, and application security layers. As 
 
 ##### Cell Targeting
 
-VPAs are targeted to a *cell*, which is a homogenous deployment zone. A cell could be a Kubernetes cluster or some other infrastructure. Cells are responsible for their own scaling. For example, a Kubernetes-based cell may use an autoscaling system to add capacity dynamically.  
+VPAs are targeted to a *cell*, which is a homogenous deployment zone. A cell could be a Kubernetes cluster or some other infrastructure. Cells are responsible for their own scaling. For example, a Kubernetes-based cell may use an autoscaling system such as [Keda](https://keda.sh/) to add capacity dynamically.  
 
 ##### RBAC: Users, Roles, and Rights
 
-> TODO: Incomplete
+> TODO: This section will be further developed based on evolving requirements.
 
 A **User** represents an administrator who can perform a set of actions against subsystems. Users have a set of **Rights** and/or are assigned **Roles**. 
 
@@ -179,7 +178,7 @@ flowchart LR
 
 #### Tenant Manager
 
-The Tenant Manager maintains a persistent store of tenant metadata, including the deployment state of VPAs associated with active participant profiles. When a change is made (e.g., create, update, or deletion), the Tenant Manager generates VPA deployments by creating a **Deployment Manifest** and submitting it to the Provision Manager's orchestration service.  
+The Tenant Manager maintains a persistent store (Postgres) of tenant metadata, including the deployment state of VPAs associated with active participant profiles. When a change is made (e.g., create, update, or deletion), the Tenant Manager generates VPA deployments by creating a **Deployment Manifest** and submitting it to the Provision Manager's orchestration service.  
 
 When Acme is onboarded, Nuvola registers a DNS name for Acme that will be used for its Web DID since Dataspace-X uses Web DIDs as identifiers. A tenant and participant profile is created, and the Tenant Manager generates three VPAs (Credential Service, Control Plane Service, and one Data Plane Service), along with a deployment manifest.    
 
@@ -188,6 +187,8 @@ The contents of the generated deployment manifest depend on Nuvola's specific in
 #### Provision Manager
 
 The Provision Manager is responsible for orchestrating deployments and managing deployment state. It contains a **Deployment Orchestrator**, a workflow system built on a distributed, reliable messaging platform. When a deployment manifest is submitted, it is converted to an **Orchestration**. The orchestration contains a directed acyclic graph (DAG) of **Actions** that are asynchronously executed in order. To understand how this works, consider the deployment manifest generated for the Acme onboarding:
+
+> The Provision Manager uses a default orchestration system built on the open-source [CNCF NATS messaging system](https://nats.io). If additional requirements arise, this default implementation can be substituted for alternatives such as [Eclipse Symphony](https://eclipse.dev/symphony/) through the CFM modularity system.  
 
 **Acme Onboarding Deployment**
 
@@ -217,16 +218,20 @@ flowchart
  credentials --> complete
 ```
 
-The deployment manifest results in an orchestration that starts by executing three parallel activities that create Acme's virtual services. When those activities complete, the virtual data plane and virtual control plane are registered with one another in sequence (for details, see below). These activities are followed by ones configuring load balancing for incoming requests, DNS routing, and completing the dataspace credential issuance process. 
+The example deployment manifest results in an orchestration that starts by executing three parallel activities that create Acme's virtual services. When those activities complete, the virtual data plane and virtual control plane are registered with one another in sequence (for details, see below). These activities are followed by ones configuring load balancing for incoming requests, DNS routing, and completing the dataspace credential issuance process. 
 
-The Deployment Orchestrator executes these activities asynchronously by sending messages to **activity executors** that perform tasks specified by the activity. For example, registering VPA metadata with a control plane cluster running in a cell. By default, the orchestration workflow system uses [NATS](https://nats.io)
+The Deployment Orchestrator executes these activities asynchronously by sending messages to **activity executors** that perform tasks specified by the activity. For example, registering VPA metadata with a control plane cluster running in a cell. By default, the orchestration workflow system uses the open-source [CNCF NATS messaging system](https://nats.io)
 
+Further details on the Deployment Orchestrator can be found in this [design document](https://github.com/Metaform/connector-fabric-manager/blob/main/docs/developer/architecture/provisioning/orchestrator.design.md).
 ##### Activity Executors
 
-An activity executor is a process that listens for activity messages on a NATS queue and asynchronously performs a set of actions. When an activity completes, the Deployment Orchestrator advances the workflow. The workflow system supports reliable qualities of service and provides a distributed Key/Value store (built on NATS Jetstream) for state persistence.  The Deployment Orchestrator handles system reliability, context persistence, recovery, and activity coordination.
+An activity executor is a process that listens for activity messages on a NATS queue and asynchronously performs a set of actions. The workflow system supports reliable qualities of service and provides a distributed Key/Value store (built on [NATS Jetstream](https://docs.nats.io/nats-concepts/jetstream)) for state persistence. The Deployment Orchestrator handles system reliability, context persistence, recovery, and activity coordination.
+
+> Note that the Jetstream Key/Value store used for workflow persistent state is different than the Postgres-based store used by the Tenant Manager. Tenant Management use cases involving frequent queries have different requirements than workflow state management; hence, the need for different technologies. 
+
+During execution, activities have access to a shared persistent context managed by the orchestration framework. Activities must be idempotent; they must complete with the same result if executed multiple times without side effects. For example, if an activity is invoked twice due to a failure, it must ensure duplicate resources are not created and the same shared stated is applied to the context. Activities may be implemented using a variety of programming languages and technologies, for example, a custom Go service or Terraform script. When an activity completes, the Deployment Orchestrator advances the workflow. 
 
 An activity executor is an extensibility point for integrating cloud provider customizations and technologies into the deployment process. For example, Nuvola has deployed a set of executors that perform load balancer and DNS routing configuration specific to its cloud environment. The CFM provides an activity executor framework written in Go. However, processors can be written in other languages using a NATS-compliant client library. 
-
 ##### Extension Model
 
 Nuvola defines its deployment process using CFM's deployment extension model. A Deployment Manifest corresponds to a *type* defined by a **Deployment Definition**, which contains a set of **Activity Definitions**. The Deployment Definition specifies the sequence of activities to be executed, and an activity definition specifies the input and output data passed to and returned from an activity executor:
@@ -249,10 +254,14 @@ style User fill:#92D6A4,stroke:#06B050,stroke-width:1px
 
 Deployment Definitions and Activity Definitions are added to the Provision Manager through a RESTful management API.
 
+>The Provision Manager can be deployed as a standalone application or to a Kubernetes cluster. It is a common design practice among deployment and orchestration platforms to base their metadata models on [Kubernetes Custom Resources](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/). We chose not to do this because using a database to store metadata rather than Kubernetes custom resources is a simpler design. In addition, this approach does not tie the CFM to Kubernetes, allowing it to operate in diverse infrastructure environments.      
 ###### Standard Activity Definitions
 
 The CFM will provide a collection of standard activities, including VPA deployments for the EDC control plane, Identity Hub, and the Industrial Data Plane.
 
+##### CFM Modularity System
+
+Extensibility is a key design center for the CFM. All CFM functionality is structured as a *service assembly,* which functions as a compile-time module (the CFM is written in Go, which is statically linked by default, as opposed to the EDC, which is written in Java and uses dynamic linking). The CFM can be customized by configuring service assemblies through a bootstrap function a compiling a distribution.
 ### EDC Control Plane
 
 [Project Source](https://github.com/eclipse-edc/Connector)
@@ -282,9 +291,9 @@ EDC-V is the same codebase as classic EDC, but with additional extensions design
 
 #### Virtualization Contexts
 
-The EDC-V control plane will support **Participant Contexts** and **Dataspace Contexts**, which are runtime analogs to Participant Profiles and Dataspace Profiles. They are created via a Management API during VPA deployment.
+The EDC-V control plane will support **Participant Contexts** and **Dataspace Contexts**, which are physical runtime analogs to the logical Participant Profiles and Dataspace Profiles. They are created via a Management API during VPA deployment.
 
-When a request is received by an EDC runtime, it will use the request URL to resolve the Participant Context and Dataspace Context. To see how this works, let's return to the Acme setup. Nuvola has registered the `connector.acmne-industries.com` subdomain with a DNS router that forwards the request to a load balancer cluster in the datacenter region where Acme's VPAs are targeted. The load balancers are configured to rewrite the URLs, forwarding them to the EDC control plane as `<host>/connector.acme-industries.com/dataspace-x`. The Participant Context and Dataspace Context can then be resolved from the URL path parts.
+When an EDC runtime receives a request, it will use the request URL to resolve the Participant Context and Dataspace Context. To see how this works, let's return to the Acme setup. Nuvola has registered the `connector.acmne-industries.com` subdomain with a DNS router that forwards the request to a load balancer cluster in the datacenter region where Acme's VPAs are targeted. The load balancers are configured to rewrite the URLs, forwarding them to the EDC control plane as `<host>/connector.acme-industries.com/dataspace-x`. The Participant Context and Dataspace Context can then be resolved from the URL path parts.
 
 This setup can be used to support multi-region operations:
 
@@ -387,6 +396,7 @@ When a message is received, it is persisted to a Postgres database configured wi
 
 Message-based processing will provide more efficient operation since there is no need to poll the database or hold exclusive locks. In addition, it will be able to support multiple sharding strategies, such as a queue per message type (e.g., state) or a queue per set of participant IDs.
 
+> Performance profiling of Classic EDC has demonstrated that timer-based polling and locking are the primary source of resource consumption for many deployments. Message-based processing addresses this issue through a reactive design that minimizes resource consumption.
 #### Dynamic Policy Engine
 
 Policies may vary by dataspace or protocol version. We also need the ability to add new policies to a running deployment, for example, if Nuvola wants to roll out support for a new dataspace. The EDC Policy Engine uses Java code to perform policy evaluations. EDC-V will support delegating evaluation to an extension that can load policy expressions based on [Common Expression Language (CEL)](https://cel.dev) from a persistent store.  
@@ -438,6 +448,7 @@ Data planes communicate with the EDC control plane through the [Data Plane Signa
 #### Data Plane SDKs
 
 [GO SDK](https://github.com/Metaform/dataplane-sdk-go)
+
 [.NET SDK](https://github.com/Metaform/dataplane-sdk-net)
 
 When a data transfer is initiated, the data plane transitions through a number of states that track the current wire protocol transmission:
@@ -465,14 +476,36 @@ stateDiagram-v2
  - OnTerminate
  - OnRecover
 
-The following diagram depicts how a NATS-based data plane is created based on the [Go SDK example](https://github.com/Metaform/dataplane-sdk-go/tree/main/examples/streaming-pull-dataplane):
+An example of a data plane for streaming data can be found in this [Go SDK example](https://github.com/Metaform/dataplane-sdk-go/tree/main/examples/streaming-pull-dataplane):
 
-==TODO Sequence Diagram==
 ### VPA Registration Architecture
 
-Communication between the EDC control plane, data plane, and Identity Hub happens at the VPA level, not at the process level. For example, when control plane and data plane VPAs are deployed, a channel is established between them, not the host systems (obviously, there must be network access between the host systems). In the case of the control plane and data plane, the channel must be bi-directional as the data plane asynchronously responds to control plane directives. 
+Communication between the EDC control plane, data plane, and Identity Hub happens at the VPA level, not the process level. For example, when control plane and data plane VPAs are deployed, a channel is established between them, not the host systems (obviously, there must be network access between the host systems). In the case of the control plane and data plane, the channel must be bi-directional as the data plane asynchronously responds to control plane directives. 
 
-VPA communication will be handled at the network level (e.g., restricting host access) and at the application level through an OAuth 2 Identity Provider (IdP). A VPA deployment agent will enable application-level security by enabling OAuth 2 Client Credentials Grant. This process is depicted below for bi-directional registration of the control plane and data plane:
+The following diagram depicts how this works:
+
+```mermaid
+flowchart LR
+
+subgraph cp [Control Plane]
+   direction TB
+   cp_vpa1@{label: "VPA"}
+   cp_vpa2@{label: "VPA"}
+end
+
+subgraph dp [Data Plane]
+   direction TB
+   dp_vpa1@{label: "VPA"}
+   dp_vpa2@{label: "VPA"}
+end
+cp_vpa1<--HTTP w/ Auth-->dp_vpa1
+cp_vpa2<--HTTP w/ Auth-->dp_vpa2
+cp <--Network Connectivity--> dp
+style cp fill:#E9EDF4,stroke:#DDDDDD,stroke-width:1px,color:#000000
+style dp fill:#E9EDF4,stroke:#DDDDDD,stroke-width:1px,color:#000000
+```
+
+VPA communication will be handled at the network level (e.g., restricting host access) and at the application level through an OAuth 2 Identity Provider (IdP). A VPA deployment agent will provide application-level security by enabling OAuth 2 Client Credentials Grant. This process is depicted below for bi-directional registration of the control plane and data plane:
 
 
 ```mermaid
@@ -501,9 +534,5 @@ sequenceDiagram
     didp ->> coord: Access Token
     coord ->> cp: Register Data Plane (provide DCR Access Token)
 ```    
-
-
-
-
 
 
