@@ -9,7 +9,7 @@ description: >-
 
 Dear colleague,
 
-After our first technical workshop earlir in June, the European Cloud Accelerator (ECA) community is reconvening—this time at Aruba’s Global Datacenter headquarters in **Bergamo, Italy**, on **Monday 6 & Tuesday 7 October 2025**.
+After our first technical workshop earlier in June, the European Cloud Accelerator (ECA) community is reconvening—this time at Aruba’s Global Datacenter headquarters in **Bergamo, Italy**, on **Monday 6 & Tuesday 7 October 2025**.
 The ECA’s mission remains unchanged: to turn trusted, sovereign and interoperable data-sharing into everyday reality for European industry. Our next gathering will move us from concepts to concrete deployments—bringing business leaders and engineers together under one (very large) roof. We will share progress on the [Open Source Eclipse Data Components project](https://github.com/eclipse-edc), which already serves as the base of the Catena-X platform supporting European dataspace initiative.
 
 <span style="color:red">**Note:** The agenda, hotel details, and other information are subject to change.</span>
@@ -19,14 +19,21 @@ The ECA’s mission remains unchanged: to turn trusted, sovereign and interopera
 
 | When                 | Track                    | Highlights                                       |
 |----------------------|--------------------------|--------------------------------------------------|
-| Monday 09:30 | Plenary kick-off         | Welcome + project overview for both business & technical stakeholders                                                                         |
-| Monday 10:30              | Business track - for rest of the day   | • IDC briefing on the €-scale market for data-spaces hosting under the EU Data Act<br>• Fireside perspectives /w BMW, Manufacturing-X, Catena-X, OPC Foundation & other industries |
-| Monday 10:30          | Technical track - for the rest of the day | • Deep dive on Eclipse Dataspace Components (EDC) architecture & roadmap:<br>&nbsp;&nbsp;1) Multi-tenancy<br>&nbsp;&nbsp;2) Industrial data plane using OPC UA/AAS<br>• Hands-on sessions with Fulcrum, Liqo and multi-cloud deployment patterns<br>• Break-outs on multi-tenancy, policy enforcement and DevOps pipelines |
-| Tuesday 09:30          | Technical track all day |   |
+| **Monday 09:30–10:30** | Plenary Kick-off         | Welcome + project overview for both business & technical stakeholders |
+| **Monday 10:30–12:30** | Business Track / Technical Track | **Business Track:** IDC briefing on the €-scale market for dataspaces hosting under the EU Data Act; fireside perspectives with BMW, Manufacturing-X, Catena-X, OPC Foundation & others. <br> **Technical Track:** Deep dive on Eclipse Dataspace Components (EDC) architecture & roadmap (multi-tenancy, industrial data plane, policy enforcement). |
+| **Monday 12:30–13:30** | Lunch                   | Catered onsite lunch for all participants |
+| **Monday 13:30–17:30** | Business & Technical Tracks Continue | Hands-on sessions with Fulcrum, Liqo, and multi-cloud deployment patterns. Break-outs on multi-tenancy, DevOps pipelines, and governance. |
+| **Monday Evening** | Networking Dinner (Sponsored by Microsoft) | Social dinner at a recommended Bergamo venue, bringing together all participants for informal discussions and networking. |
 
-*(A detailed agenda will follow; expect doors to close by 16:00 CET on Tue 7 Oct.)*
+| **Tuesday 09:30–12:30** | Technical Track (All Day) | Focused technical sessions will explore the evolution of Eclipse Dataspace Components (EDC) toward multi-tenant, SaaS-ready deployments, including control and data plane architecture, extension models, and operational tooling. Attendees will see presentations from Metaform on multi-tenancy and the Data Plane SDK, with demonstrations of how control-plane components, policy enforcement, and DevOps pipelines come together to simplify onboarding. Sessions from Aruba will showcase the new whitelabel management UI for EDC, providing a reusable, open-source foundation for managing dataspaces across hybrid and multi-cloud environments.
+
+The day will also feature contributions from Catena-X, sharing industry adoption patterns, AAS model requirements, and end-user experience priorities, and from Opiquad, presenting lessons learned hosting dataspaces with Fulcrum. Technical participants will gain a practical view into onboarding flows, policy management UIs, and integration with industrial standards like OPC UA and Asset Administration Shell. |
+| **Tuesday 12:30–13:30** | Lunch                   | Catered onsite lunch |
+| **Tuesday 13:30–14:30** | Aruba Datacenter Tour (Technical Participants Only) | Guided tour of Aruba’s Bergamo campus with three rotating groups, exploring operations and infrastructure. |
+| **Tuesday 14:30–16:00** | Closing Technical Sessions | Roadmap alignment, design discussions, and wrap-up. |
 
 ---
+*(A detailed agenda will follow; expect doors to close by 16:00 CET on Tue 7 Oct.)*
 
 ## Why You Should Attend
 
