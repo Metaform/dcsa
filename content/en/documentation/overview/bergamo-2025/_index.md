@@ -20,18 +20,14 @@ The ECA’s mission remains unchanged: to turn trusted, sovereign and interopera
 | When                 | Track                    | Highlights                                       |
 |----------------------|--------------------------|--------------------------------------------------|
 | **Monday 09:30–10:30** | Plenary Kick-off         | Welcome + project overview for both business & technical stakeholders |
-| **Monday 10:30–12:30** | Business Track / Technical Track | **Business Track:** IDC briefing on the €-scale market for dataspaces hosting under the EU Data Act; fireside perspectives with BMW, Manufacturing-X, Catena-X, OPC Foundation & others. <br> **Technical Track:** Deep dive on Eclipse Dataspace Components (EDC) architecture & roadmap (multi-tenancy, industrial data plane, policy enforcement). |
+| **Monday 10:30–12:30** | Business Track / Technical Track | **Business Track:** IDC briefing on the €-scale market for dataspaces hosting under the EU Data Act; fireside perspectives with BMW, Manufacturing-X, Catena-X, OPC Foundation & others.<br>**Technical Track:** Deep dive on Eclipse Dataspace Components (EDC) architecture & roadmap (multi-tenancy, industrial data plane, policy enforcement). |
 | **Monday 12:30–13:30** | Lunch                   | Catered onsite lunch for all participants |
 | **Monday 13:30–17:30** | Business & Technical Tracks Continue | Hands-on sessions with Fulcrum, Liqo, and multi-cloud deployment patterns. Break-outs on multi-tenancy, DevOps pipelines, and governance. |
 | **Monday Evening** | Networking Dinner (Sponsored by Microsoft) | Social dinner at a recommended Bergamo venue, bringing together all participants for informal discussions and networking. |
-
-| **Tuesday 09:30–12:30** | Technical Track (All Day) | Focused technical sessions will explore the evolution of Eclipse Dataspace Components (EDC) toward multi-tenant, SaaS-ready deployments, including control and data plane architecture, extension models, and operational tooling. Attendees will see presentations from Metaform on multi-tenancy and the Data Plane SDK, with demonstrations of how control-plane components, policy enforcement, and DevOps pipelines come together to simplify onboarding. Sessions from Aruba will showcase the new whitelabel management UI for EDC, providing a reusable, open-source foundation for managing dataspaces across hybrid and multi-cloud environments.
-
-The day will also feature contributions from Catena-X, sharing industry adoption patterns, AAS model requirements, and end-user experience priorities, and from Opiquad, presenting lessons learned hosting dataspaces with Fulcrum. Technical participants will gain a practical view into onboarding flows, policy management UIs, and integration with industrial standards like OPC UA and Asset Administration Shell. |
+| **Tuesday 09:30–12:30** | Technical Track (All Day) | Focused technical sessions on EDC multi-tenancy architecture, control & data plane evolution, SDK deep dives, and operational tooling. Includes talks from Metaform (multi-tenancy + SDK), Aruba (whitelabel management UI), Catena-X (AAS models & adoption insights), and Opiquad (hosting lessons learned). |
 | **Tuesday 12:30–13:30** | Lunch                   | Catered onsite lunch |
 | **Tuesday 13:30–14:30** | Aruba Datacenter Tour (Technical Participants Only) | Guided tour of Aruba’s Bergamo campus with three rotating groups, exploring operations and infrastructure. |
 | **Tuesday 14:30–16:00** | Closing Technical Sessions | Roadmap alignment, design discussions, and wrap-up. |
-
 ---
 *(A detailed agenda will follow; expect doors to close by 16:00 CET on Tue 7 Oct.)*
 
