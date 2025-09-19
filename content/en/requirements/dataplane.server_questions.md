@@ -23,9 +23,15 @@ Assumption:
 - AAS Repository API: to obtain AAS data and submodel identifiers
 - Submodel Repository API: to obtain Submodel information + actual values
 
-typical flow (?): 1. Registry stores descriptors (metadata + endpoints). 2. Consumer makes queries against AAS registry API → gets the AAS Descriptor. 3. Consumer follows descriptor endpoint (AAS Repository API) → fetches AAS. 4. Consumer resolves Submodel IDs from AAS 5. Consumer calls Submodel Repository API with IDs → gets the real data.
+typical flow (?):
 
-## Consumer-side APIs (AAS/Submodel APIs):
+1. Registry stores descriptors (metadata + endpoints).
+2. Consumer makes queries against AAS registry API → gets the AAS Descriptor.
+3. Consumer follows descriptor endpoint (AAS Repository API) → fetches AAS.
+4. Consumer resolves Submodel IDs from AAS
+5. Consumer calls Submodel Repository API with IDs → gets the real data.
+
+## Consumer-side APIs (AAS/Submodel APIs)
 
 - The spec does not specify the filter expression notation. What filter queries do we need? Do people query by Shell-ID, Submodel/-ID? Some other property of the Submodel?
 - Do we have to query by value, i.e. "give me submodels that match `'palletOfScrews.manufacturing_data.weight > 42_000'`"?
