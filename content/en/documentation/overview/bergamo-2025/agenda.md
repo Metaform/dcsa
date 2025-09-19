@@ -12,10 +12,12 @@ description: >-
 
 ## 🗓 Monday, October 6
 
-### ⏰ 09:30 — Plenary Kick-off  
-**Presenter:** Babak — 10 min  
-- Align on objectives and action items  
+### ⏰ 09:30 — Plenary Kick-off with Business & Technical Track
+**Presenters:** Aruba, Babak Jahromi & Jason Matusow (Microsoft) — 60 min  
+- Introductions & Logistics
+- Align on objectives and action items for the 2 days
 
+After the first hour we split into two tracks, a business & technical track. 
 ---
 
 ## BUSINESS TRACK – DAY 1
