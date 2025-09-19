@@ -26,6 +26,12 @@ Our approach is highly interactive — we are avoiding formal speeches in favor 
 
 ### ⏰ 10:30 — Business Workshop Discussions  
 
+### ⏰ 12:30 — 🍽 Lunch (12:30–13:30)
+
+### ⏰ 13:30 — Business Track Continues  
+- Roundtable work and drafting of key action items  
+
+## BUSINESS TRACK - Agenda
 **1. Business Models**  
 - Clarify what each community of actors needs for ECA success:  
   - Top-level enterprises  
@@ -58,10 +64,7 @@ Our approach is highly interactive — we are avoiding formal speeches in favor 
 - Discuss possible February public launch of ECA  
 - Agree on next steps  
 
-### ⏰ 12:30 — 🍽 Lunch (12:30–13:30)
 
-### ⏰ 13:30 — Business Track Continues  
-- Roundtable work and drafting of key action items  
 
 ---
 
@@ -77,15 +80,6 @@ Our approach is highly interactive — we are avoiding formal speeches in favor 
 ---
 
 ## 🗓 Tuesday, October 7
-
-## BUSINESS TRACK – DAY 2
-
-### ⏰ 09:30 — Business Strategy Wrap-Up  
-- Synthesize outcomes from Day 1  
-- Present consolidated recommendations  
-- Define joint commitments, timelines, and next steps  
-
----
 
 ## TECHNICAL TRACK – DAY 2
 
