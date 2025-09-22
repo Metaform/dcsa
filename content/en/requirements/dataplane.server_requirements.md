@@ -4,22 +4,25 @@
 
 - [1. Requirements for an industrial data plane server](#1-requirements-for-an-industrial-data-plane-server)
   - [1.1 Definition of terms](#11-definition-of-terms)
-  - [1.2 Functional requirements](#12-functional-requirements)
-    - [1.2.1 Public-facing APIs](#121-public-facing-apis)
-      - [1.2.1.1 Query capabilities of public-facing APIs](#1211-query-capabilities-of-public-facing-apis)
+  - [1.2 Roles and components](#12-roles-and-components)
+    - [1.2.1 Discovery Service](#121-discovery-service)
+    - [1.2.2 Submodel Servers](#122-submodel-servers)
+  - [1.3 Functional requirements](#13-functional-requirements)
+    - [1.3.1 Public-facing APIs](#131-public-facing-apis)
+      - [1.3.1.1 Query capabilities of public-facing APIs](#1311-query-capabilities-of-public-facing-apis)
         - [Query-by-ID](#query-by-id)
         - [Query by other properties](#query-by-other-properties)
-      - [1.2.1.2 Mutating API calls](#1212-mutating-api-calls)
-      - [1.2.1.3 Authentication and Authorization](#1213-authentication-and-authorization)
-    - [1.2.2 Data manipulation (internal APIs)](#122-data-manipulation-internal-apis)
-      - [1.2.2.1 Security, Authentication and Authorization](#1221-security-authentication-and-authorization)
-    - [1.2.3 Dataplane Signaling API](#123-dataplane-signaling-api)
-  - [1.3 Non-functional requirements](#13-non-functional-requirements)
-  - [1.3.1 Modularity](#131-modularity)
-  - [1.3.2 Scalability and Availability](#132-scalability-and-availability)
-  - [1.3.3 Security](#133-security)
-  - [1.3.4 Maintainability](#134-maintainability)
-  <!-- TOC -->
+      - [1.3.1.2 Mutating API calls](#1312-mutating-api-calls)
+      - [1.3.1.3 Authentication and Authorization](#1313-authentication-and-authorization)
+    - [1.3.2 Data manipulation and ingest (internal APIs)](#132-data-manipulation-and-ingest-internal-apis)
+      - [1.3.2.1 Security, Authentication and Authorization](#1321-security-authentication-and-authorization)
+    - [1.3.3 Dataplane Signaling API](#133-dataplane-signaling-api)
+  - [1.4 Non-functional requirements](#14-non-functional-requirements)
+    - [1.4.1 Modularity](#141-modularity)
+    - [1.4.2 Scalability and Availability](#142-scalability-and-availability)
+    - [1.4.3 Security](#143-security)
+    - [1.4.4 Maintainability](#144-maintainability)
+    <!-- TOC -->
 
 An industrial plane server is a runtime component that allows data providers to serve their data to authorized
 consumers. It is typically used in data spaces, where data providers and consumers do not know each other beforehand.
@@ -45,9 +48,37 @@ This document serves as a basis for any technical designs of such a data plane s
 - principal: an entity that can be authenticated, typically a user or a service, not necessarily a human actor
 - asset: a physical thing that is identified by a unique identifier, its asset-ID
 
-## 1.2 Functional requirements
+## 1.2 Roles and components
 
-### 1.2.1 Public-facing APIs
+The data plane server is not one single application, instead it is a collection of components, each fulfilling a
+different role.
+
+These are:
+
+### 1.2.1 Discovery Service
+
+A single, central service that allows data consumers to find the AAS-ID and submodel identifiers for any given physical
+asset, such as a serial number or a part number. The Discovery Service is the initial port-of-entry for all data
+consumers. The Discovery Service may be comprised of multiple (logical) subcomponents and APIs.
+
+To perform management operations, such as create, update, delete asset descriptor information, the Discovery Service
+must expose an API that is intended to be used by internal actors (or other internal systems) only and that is not
+exposed to the internet. In practice, this management API is implemented by the [AAS Registry API SSP-001](https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellRegistryServiceSpecification/V3.0_SSP-001).
+
+### 1.2.2 Submodel Servers
+
+Submodels are containers of actual data in the AAS world, so each submodel server must implement the [Submodel Service API
+SSP-003](https://app.swaggerhub.com/apis/Plattform_i40/SubmodelServiceSpecification/V3.0_SSP-003#/). There is no limit
+how many submodel servers may exist per AAS, or what the cardinality of submodels per server is.
+
+A submodel server (however implemented) is accessible from the internet and must implement appropriate authentication
+and authorization mechanisms. It also must offer a way to manipulate the data it holds.
+
+Each AAS must support multiple submodel servers, and each submodel server must be able to serve submodels for multiple AAS.
+
+## 1.3 Functional requirements
+
+### 1.3.1 Public-facing APIs
 
 This chapter focuses on APIs that are exposed to other dataspace participants over the internet.
 
@@ -73,7 +104,7 @@ APIs, typically only a subset is used in practice:
 
 _Note: APIs for data consumers are not listed here._
 
-#### 1.2.1.1 Query capabilities of public-facing APIs
+#### 1.3.1.1 Query capabilities of public-facing APIs
 
 In most scenarios the data consumers know the physical asset ID (e.g., serial number) and want to get data for that
 asset. The primary query pattern is, therefore:
@@ -89,27 +120,27 @@ asset. The primary query pattern is, therefore:
 
 ##### Query by other properties
 
-The APIs listed in [public-facing APIs](#121-public-facing-apis) do not define a query endpoint, but the AAS and
+The APIs listed in [public-facing APIs](#131-public-facing-apis) do not define a query endpoint, but the AAS and
 Submodel Repository API define a `/query/shells` and `/query/submodels` endpoint, respectively, that allow to query
 shells and submodels using a custom query expression syntax.
 
 > this requirement is OPTIONAL
 
-#### 1.2.1.2 Mutating API calls
+#### 1.3.1.2 Mutating API calls
 
 The AAS Specification defines several mutating API calls, for example, to patch shells or submodels or their respective
 data. While industry use cases exist (e.g. [here and
 ff.](https://eclipse-tractusx.github.io/docs-kits/kits/digital-twin-kit/software-development-view/interaction-patterns#3-updating-an-existing-submodel)),
 their implementation would require an optional profile of the AAS Registry API
 [SSP-001](https://app.swaggerhub.com/apis/Plattform_i40/AssetAdministrationShellRegistryServiceSpecification/V3.0_SSP-001).
-This would also surface an entirely new set of requirements for [authn/authz](#1213-authentication-and-authorization).
+This would also surface an entirely new set of requirements for [authn/authz](#1313-authentication-and-authorization).
 
 > this requirement is OPTIONAL
 
-#### 1.2.1.3 Authentication and Authorization
+#### 1.3.1.3 Authentication and Authorization
 
 The data plane server shall enforce secure authentication and authorization mechanisms across all [public-facing
-APIs](#121-public-facing-apis).
+APIs](#131-public-facing-apis).
 
 Clients making requests to these APIs must authenticate using industry-standard protocols such as OAuth2 or OpenID
 Connect (OIDC). Authorization shall be implemented on a per-submodel basis. This means that authoring systems must be
@@ -120,7 +151,7 @@ roles/scopes.
 [DID](https://www.w3.org/TR/did-core/)), may be authorized to discover only a certain subset of all available AAS, and
 within those AAS, they may only be authorized to access submodels of a certain type (e.g. "battery passport" submodels).
 
-If [mutating API calls](#1212-mutating-api-calls) are implemented, the data plane server must also enforce authorization
+If [mutating API calls](#1312-mutating-api-calls) are implemented, the data plane server must also enforce authorization
 on PUT, POST, PATCH and DELETE calls, and the authorization backend must be able to resolve permissions for these calls.
 
 **Example use case 2**: a dataspace participant contributes a new submodel to an existing AAS, e.g., a maintenance
@@ -128,12 +159,12 @@ report for a turbine. This means the turbine manufacturer's AAS is _patched_ by 
 AAS server, which would point to the maintenance provider's submodel endpoint. The turbine manufacturer must authorize
 the maintenance provider to execute mutating calls on their AAS.
 
-### 1.2.2 Data manipulation (internal APIs)
+### 1.3.2 Data manipulation and ingest (internal APIs)
 
 This chapter focuses on systems and APIs that are intended to be used by internal actors (or other internal systems)
 only. These systems and APIs are not exposed to the data space and should be protected by network-level security
 mechanisms such as firewalls or VPNs. In addition, they may require a different authentication and authorization
-mechanism than the [public-facing APIs](#121-public-facing-apis). Here, conventional enterprise mechanisms such as
+mechanism than the [public-facing APIs](#131-public-facing-apis). Here, conventional enterprise mechanisms such as
 Active Directory, LDAP or SAML may be used to identify authorized actors.
 
 The following operations must be implemented on the dataplane server:
@@ -154,11 +185,15 @@ possible to implement the "changing submodel data" requirement by other means, f
 ERP system or uploading static files to a system. The speeds-and-feeds of the data must be taken into account here.
 
 Similarly, to fulfill the "adding new assets" requirement, the Discovery API ([see Public-facing
-APIs](#121-public-facing-apis)) may simply point to a flat file or database that contains AAS information, and
+APIs](#131-public-facing-apis)) may simply point to a flat file or database that contains AAS information, and
 modifications to it happen via file/db access. Here, the level of concurrency and the frequency of those updates will
 play a significant role.
 
-#### 1.2.2.1 Security, Authentication and Authorization
+> **Open question**: what ingest formats do we have to consider? Requirements were brought forward to support OPC UA
+> Nodeset files as well as ERP systems being the actual data source. Are there other formats such as CSV files? JSON
+> files containing AAS-compliant submodel data?
+
+#### 1.3.2.1 Security, Authentication and Authorization
 
 All internal APIs must be protected with appropriate authentication and authorization mechanisms. Which exact mechanisms
 are used is dependent on the system(s) used to fulfill the requirements listed above.
@@ -186,34 +221,60 @@ manipulate data **must**:
   dataspace participant, not an internal user. A tenant (a company) may have multiple participants, and each participant
   may operate multiple data plane servers.
 
-See also the [non-functional requirements](#13-non-functional-requirements) section of this document.
+See also the [non-functional requirements](#14-non-functional-requirements) section of this document.
 
-### 1.2.3 Dataplane Signaling API
+### 1.3.3 Dataplane Signaling API
 
 Data plane server implementations **must** implement the [Dataplane Signaling
 API](https://github.com/Metaform/dataplane-signaling/blob/main/docs/signaling.md).
 
 > Todo: clarify the exact registration requirements
 
-## 1.3 Non-functional requirements
+### 1.3.4 No inbound reachability requirements
 
-### 1.3.1 Modularity
+The data plane server **must not** impose any reachability requirements on internal services that would necessitate
+inbound connectivity of those services from the internet. Services, that contain the physical data cannot be required to
+be exposed to the internet, for example, by opening firewall ports or similar.
+
+The main reasons are security, scalability and performance.
+
+The data plane server **must** provide a mechanism to act as a reverse proxy or gateway for such services. In practice,
+this means that in order to serve data, the data plane server must not (solely) rely on an internal service being
+exposed to the internet, as would be the case with ERP systems or OPC UA servers that are typically not internet-facing.
+
+A common use case in certain industries is to have the ERP system implement the Submodel Repository API and route this
+endpoint to the internet. While some customers may still choose to do this, the data plane server **must** offer an
+alternative way, i.e. a submodel server component.
+
+In addition, this submodel server component **must** implement the [Submodel Service API
+V3.1.1_SSP-001](https://app.swaggerhub.com/apis/Plattform_i40/SubmodelServiceSpecification/V3.1.1_SSP-001) to allow
+the manual or automated ingestion of data from other systems.
+
+## 1.4 Non-functional requirements
+
+### 1.4.1 Modularity
 
 The data plane server is not one single application, instead it is a collection of components that can be deployed,
 maintained and managed independently. This is to enable different scaling and availability requirements for different
 components as well as independent development and maintenance cycles.
 
-The following components **must** be implemented as separate deployable units:
+The following components **must** support the following use cases:
 
-- Discovery Service + AAS Registry Service: highly available, geo-replicated, low-latency service (second-stage lookup)
-- Submodel Server(s): high-performance data servers
+- geo-replication and high-availability: the Discovery Service must be able to run on HA systems, e.g., in cloud
+  systems, and must run as replicated instances in different regions to reduce latency and increase availability.
+
+- low-latency: the Discovery Service must be able to respond to requests in a low-latency manner, as it is the initial
+  port-of-entry for all data consumers.
+
+- resource efficiency: all components must be able to run in a non-wasteful manner, i.e., always deploying a Discovery
+  Service alongside a Submodel Server, even if not in use, is not acceptable.
 
 Many deployments will likely use additional components, such as a management UI, an authorization backend or similar.
 These components **should** be implemented as separate deployable units as well.
 
 Concrete requirements for modularity are listed in subsequent sections.
 
-### 1.3.2 Scalability and Availability
+### 1.4.2 Scalability and Availability
 
 In most real-life deployments, the Discovery Service will be a standalone component to enable—among other
 things—individual scaling and high availability. Requirements with regard to availability and latency are extremely high
@@ -240,10 +301,7 @@ overall.
 In addition, cascading/partitioned setups make the registration process more complex because each asset must be
 registered with the root Discovery Service and then a second time with the respective downstream Discovery Service.
 
-public APIs: must be individual sw packages to enable heterogeneous systems, e.g., Tx-DTR, but high-performance submodel
-repo servers
-
-### 1.3.3 Security
+### 1.4.3 Security
 
 While security is expected to be mostly homogenous across the public-facing APIs of the data plane server, the internal
 APIs are likely to face more nuanced requirements and roles.
@@ -262,7 +320,7 @@ a network level, possibly from one another, but definitely from the public-facin
 Public-facing APIs are likely to experience a high level of load and present a large attack surface, so they should be
 fronted by hardened API gateways and load balancers with request-throttling and DDoS protection capabilities.
 
-### 1.3.4 Maintainability
+### 1.4.4 Maintainability
 
 Modular and independently deployable components enable independent maintenance and development cycles and independent
 teams with specialized knowledge. In addition, individual components are often provided by different vendors, for
