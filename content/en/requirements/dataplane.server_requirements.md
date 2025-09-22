@@ -201,7 +201,7 @@ are used is dependent on the system(s) used to fulfill the requirements listed a
 There are, however, some generic requirements that all those mechanisms and systems **must** fulfill. Systems to
 manipulate data **must**:
 
-- be deployable in different security realms from the public-facing APIs. Security mechanisms (OAuth2, ...) **may** be
+- use different security realms from the public-facing APIs. Security mechanisms (OAuth2, ...) **may** be
   different, but identity realms and security principals **must** be different. It should not be possible to use the
   same principal to authenticate against public-facing APIs and internal APIs to curtail the risk of privilege
   escalation. In most cases, dataspace participant will likely even use different identity providers: users use their
@@ -211,9 +211,6 @@ manipulate data **must**:
 - be deployable in different network segments (e.g., internal vs. external). This is to enforce the separation of
   network substacks such as webservers and context paths. Public facing APIs and internal facing APIs **must not** be
   served on the same web context.
-
-- be deployable individually from public-facing APIs: to enable independent development and maintenance streams, the
-  internal systems and APIs must be upgradeable independently of external APIs.
 
 - multi-tenancy: all internal APIs and systems **must** be multi-participant capable. For example, in order to update an
   AAS, the system must be able to identify the participant, verify that that participant owns the AAS, and then verify,
