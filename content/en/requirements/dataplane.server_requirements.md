@@ -32,6 +32,21 @@ amounts of data, both high and low frequency of data changes. The domain is typi
 industry, automotive, aerospace or similar. While concepts developed here may be transferable to other domains such as
 healthcare, smart cities or finance, these are out of scope.
 
+Typical uses cases for industrial data plane servers are:
+
+- a manufacturer of industrial equipment (e.g., turbines) wants to share operational data with its maintenance service
+  provider. To do that, the manufacturer models the turbine as Asset Administration Shell and its operational data as
+  AAS Submodel. The turbine is shipped to the maintenance service company, where the technician scans the turbine's
+  serial number upon receiving. Through AAS Discovery the AAS ID is found and the technician's computer terminal
+  downloads the operational data submodel from the manufacturer's data plane server.
+
+- a screw manufacturer ships a pallet of screws to an automotive OEM, who uses the screws in their production line. The screw
+  manufacturer wants to share quality and compliance data about the screws with the automotive OEM. The screw
+  manufacturer models the pallet as an Asset Administration Shell and its quality and compliance data as AAS Submodels.
+  The pallet is shipped to the automotive OEM, where the receiving department scans the pallet's barcode upon receiving.
+  Through AAS Discovery the AAS ID is found and the receiving terminal downloads the quality and compliance submodels
+  from the screw manufacturer's data plane server.
+
 This document serves as a basis for any technical designs of such a data plane server.
 
 ## 1.1 Definition of terms
