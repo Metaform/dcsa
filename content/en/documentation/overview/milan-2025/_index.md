@@ -42,7 +42,7 @@ Babak Jahromi summarized the spirit of the workshop:
 
 ### Immediate Actions
 - ✅ Test and deploy EDC in your own environment (Docker, Azure, Opiquad, etc.)
-- ✅ Join a working group (EDC, DSSC, Gaia-X, IDSA)
+- ✅ Join a working group (EDC, DSSC, Gaia-X, IDSA, OPCF)
 - ✅ Contribute use cases, feedback, and reference integrations
 - ✅ Plan for migration paths — data spaces are now running in production
 
