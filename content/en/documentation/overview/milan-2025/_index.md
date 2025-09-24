@@ -23,10 +23,11 @@ Focus areas included:
 - Deployment patterns across Azure, Fulcrum, and Opiquad-hosted clouds
 
 ### 🤝 Industry and Ecosystem Alignment
-Leaders from Catena-X, Manufacturing-X, IDSA, iSHARE, and the OPC Foundation shared how they are building production-grade data spaces with real-world constraints:
-- Automotive, supply chain, and energy sectors are prioritizing interoperability and self-sovereign identity
-- Small and medium enterprises (SMEs) must be first-class citizens, with minimal onboarding friction
-- Cross-domain and international cooperation is essential — “no one wants to onboard to five data spaces five different ways”
+Leaders from Catena-X, Manufacturing-X, IDSA, iSHARE, **OPCF**, and the OPC Foundation shared how they are building production-grade data spaces with real-world constraints:  
+- Automotive, supply chain, and energy sectors are prioritizing interoperability and self-sovereign identity  
+- Small and medium enterprises (SMEs) must be first-class citizens, with minimal onboarding friction  
+- Cross-domain and international cooperation is essential — “no one wants to onboard to five data spaces five different ways”  
+- **OPCF highlighted its role in bridging industrial automation and data spaces, including initiatives such as [“OPC UA for Battery Solutions”](https://opcfoundation.org/news/press-releases/opc-ua-for-battery/) where European Cloud partners, Fraunhofer, Catena-X, Microsoft, Huawei, and others are prototyping a digital battery passport**  
 
 ### 🧱 Standards and Regulation
 With the EU Data Act taking effect, aligning with emerging standards became a top priority. Topics included:
@@ -41,13 +42,13 @@ Babak Jahromi summarized the spirit of the workshop:
 > _"We’ve come far — now everyone must ask: how do I plug in, and how do I contribute? Some of us will work on multi-tenancy. Others can test binaries in their native environment. The path is emerging."_
 
 ### Immediate Actions
-- ✅ Test and deploy EDC in your own environment (Docker, Azure, Opiquad, etc.)
-- ✅ Join a working group (EDC, DSSC, Gaia-X, IDSA, OPCF)
-- ✅ Contribute use cases, feedback, and reference integrations
-- ✅ Plan for migration paths — data spaces are now running in production
+- ✅ Test and deploy EDC in your own environment (Docker, Azure, Opiquad, etc.)  
+- ✅ Join a working group (EDC, DSSC, Gaia-X, IDSA, [OPCF](https://opcfoundation.org/))  
+- ✅ Contribute use cases, feedback, and reference integrations  
+- ✅ Plan for migration paths — data spaces are now running in production  
 
 ---
 📚 [View the full introduction to the European Cloud Accelerator →](./agenda/)  
-🔗 [Get started with Eclipse Dataspace Components](https://github.com/eclipse-edc)
-📄 [ Download the June 2025 Workshop PDF](./June%202025%20-%20Milan%20-%20Cloud%20Accelerator%20%20Workshop%20-%20v2.pdf)
-
+🔗 [Get started with Eclipse Dataspace Components](https://github.com/eclipse-edc)  
+🔗 [Learn more about OPCF and OPC UA](https://opcfoundation.org/)  
+📄 [Download the June 2025 Workshop PDF](./June%202025%20-%20Milan%20-%20Cloud%20Accelerator%20%20Workshop%20-%20v2.pdf)
