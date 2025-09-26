@@ -23,7 +23,7 @@ The mission of the ECA remains clear: **to make trusted, sovereign, and interope
 - **Networking Dinner**: An opportunity to connect with peers in Bergamo (sponsored by Microsoft).  
 - **Aruba Datacenter Tour**: Guided visit of the Bergamo campus.  
 
-The detailed agenda is available [here](./techsummit%20agenda.pdf).  
+The detailed agenda is available [here](../agenda).  
 
 ---
 
