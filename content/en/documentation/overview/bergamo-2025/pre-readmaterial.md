@@ -7,10 +7,50 @@ description: >-
 ---
 
 ## Heading
+# Welcome to the European Cloud Accelerator Workshop – Bergamo 2025  
 
-Edit this template to create your new page.
+After our energizing workshop in Milan, we are thrilled to welcome you to the next gathering of the **European Cloud Accelerator (ECA)** community. This time, we will meet at **Aruba’s Global Datacenter headquarters in Bergamo, Italy, on Monday 6 & Tuesday 7 October 2025**.  
 
-* Give it a good name, ending in `.md` - e.g. `getting-started.md`
-* Edit the "front matter" section at the top of the page (weight controls how its ordered amongst other pages in the same directory; lowest number first).
-* Add a good commit message at the bottom of the page (<80 characters; use the extended description field for more detail).
-* Create a new branch so you can preview your new file and request a review via Pull Request.
+The mission of the ECA remains clear: **to make trusted, sovereign, and interoperable data sharing a practical reality for European industry.** In Bergamo, we will move from concepts to deployments – connecting business leaders, engineers, and standards bodies under one roof.  
+
+---
+
+## What to Expect  
+
+- **Business Track**: Perspectives from IDC on the data economy, fireside discussions with BMW, Catena-X, Manufacturing-X, OPC Foundation, and other industry leaders.  
+- **Technical Track**: Deep dives on Eclipse Dataspace Components (EDC), multi-tenancy, industrial data planes, OPC UA/AAS integration, and DevOps tooling.  
+- **Hands-on Sessions**: Fulcrum, Liqo, Radius and multi-cloud deployment patterns.  
+- **Networking Dinner**: An opportunity to connect with peers in Bergamo (sponsored by Microsoft).  
+- **Aruba Datacenter Tour**: Guided visit of the Bergamo campus.  
+
+The detailed agenda is available [here](./techsummit%20agenda.pdf).  
+
+---
+
+## Prepare & Stay Informed  
+
+To make the most of the workshop:  
+1. **Pre-read material** is available in our [resources section](./) and includes reports, studies, and partner contributions.  
+2. A **YouTube video playlist** of short introductions and context is also available:  
+   👉 [Pre-Read Playlist on YouTube](https://www.youtube.com/playlist?list=PL8XAuixTAZx1NtK24W08w7hvyBv-cEDG5)  
+3. If you missed the Milan sessions, you can revisit all slide decks, recordings, and take-aways [here](https://metaform.github.io/dcsa/documentation/overview/milan-2025/).  
+
+---
+
+## Why You Should Attend  
+
+- **See real deployments** – partners will demonstrate EDC in production.  
+- **Meet the ecosystem** – standards bodies, consortia, and cloud providers aligning on Data Act compliance.  
+- **Shape the roadmap** – your input will guide the next iterations of open-source dataspace components.  
+
+---
+
+We look forward to building on the momentum from Milan and working together in Bergamo to take the European Cloud Accelerator one step further.  
+
+See you in Bergamo!  
+
+Kind regards,  
+**The European Cloud Accelerator Organizing Team**  
+(on behalf of Aruba, Metaform, Microsoft, and community partners)  
+
+
