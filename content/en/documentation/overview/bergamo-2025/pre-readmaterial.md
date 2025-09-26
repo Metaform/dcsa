@@ -1,6 +1,6 @@
 ---
 title: "Pre-Read Material for the Bergamo event"
-linkTitle: "pre-read"
+linkTitle: "Pre-Read Material"
 weight: 100
 description: >-
      This page contains important pre-read documentation and videos to prep yourselves for the Bergamo event and understand the background between DataSpaces. 
@@ -30,7 +30,7 @@ The detailed agenda is available [here](./techsummit%20agenda.pdf).
 ## Prepare & Stay Informed  
 
 To make the most of the workshop:  
-1. **Pre-read material** is available in our [resources section](./) and includes reports, studies, and partner contributions.  
+1. **Pre-read material** is available in our [resources section](https://github.com/Metaform/dcsa/tree/main/content/en/documentation/overview/bergamo-2025/resources) and includes reports, studies, and partner contributions.
 2. A **YouTube video playlist** of short introductions and context is also available:  
    👉 [Pre-Read Playlist on YouTube](https://www.youtube.com/playlist?list=PL8XAuixTAZx1NtK24W08w7hvyBv-cEDG5)  
 3. If you missed the Milan sessions, you can revisit all slide decks, recordings, and take-aways [here](https://metaform.github.io/dcsa/documentation/overview/milan-2025/).  
