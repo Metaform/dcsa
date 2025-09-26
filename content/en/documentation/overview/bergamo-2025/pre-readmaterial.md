@@ -6,7 +6,6 @@ description: >-
      This page contains important pre-read documentation and videos to prep yourselves for the Bergamo event and understand the background between DataSpaces. 
 ---
 
-## Heading
 # Welcome to the European Cloud Accelerator Workshop – Bergamo 2025  
 
 After our energizing workshop in Milan, we are thrilled to welcome you to the next gathering of the **European Cloud Accelerator (ECA)** community. This time, we will meet at **Aruba’s Global Datacenter headquarters in Bergamo, Italy, on Monday 6 & Tuesday 7 October 2025**.  
