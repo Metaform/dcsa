@@ -25,7 +25,7 @@ The ECA’s mission remains unchanged: to turn trusted, sovereign and interopera
 | **Tue 13:30–16:00**      | Technical Sessions Continue   | Data plane SDK, CNCF Radius, IDSA/FDOs/AI clinics.                         |
 | **Tue 16:00–16:30**      | Closing Plenary               | Roadmap alignment, next steps & wrap-up                                    |
 ---
-* The detailed agenda is available [here](../agenda).  
+* The detailed agenda is available [here](agenda).  
 
 ## Why You Should Attend
 - **See real deployments**: Partners will showcase how they are running EDC.  
