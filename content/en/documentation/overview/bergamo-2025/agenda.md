@@ -9,7 +9,7 @@ description: >-
 📍 Bergamo – October 6,7 2025
 
 > **Logistics:** Facility closes at **17:00**. **No parking at the premises**; if you parked in adjacent lots, please relocate by 17:00 due to site closure.  
-> **Dinner (Mon):** Ristorante Ponte di Briolo — walking distance **600m (~9 min)**. [Walking route map (PNG)](../19c34712-667e-48b5-85fd-da2bf7fb4c4a.png)
+> **Dinner (Mon):** Ristorante Ponte di Briolo — walking distance **600m (~9 min)**. [Walking route map (PNG)](map.png)
 
 ---
 
@@ -71,7 +71,7 @@ Depots, Eclipse project status, new members, developers, and progress.
 - **17:30–18:30** Networking Drinks hour  
 - **18:30** Dinner at **Ristorante Ponte di Briolo** (walk/taxi).  
   Site: www.ristorantepontedibriolo.it/  
-  Walking distance from Aruba (**600m, ~9 min**) — [map](map.png)
+  Walking distance from Aruba (**600m, ~9 min**)
 
 ---
 
