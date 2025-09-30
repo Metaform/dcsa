@@ -9,7 +9,7 @@ description: >-
 📍 Bergamo – October 6,7 2025
 
 > **Logistics:** Facility closes at **17:00**. **No parking at the premises**; if you parked in adjacent lots, please relocate by 17:00 due to site closure.  
-> **Dinner (Mon):** Ristorante Ponte di Briolo — walking distance **600m (~9 min)**. [Walking route map (PNG)](map.png)
+> **Dinner (Mon):** Ristorante Ponte di Briolo — walking distance **600m (~9 min)**. [Walking route map (PNG)](../map.png)
 
 ---
 
