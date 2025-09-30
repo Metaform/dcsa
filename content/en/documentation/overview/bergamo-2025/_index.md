@@ -19,7 +19,7 @@ The ECA’s mission remains unchanged: to turn trusted, sovereign and interopera
 | **Mon 12:30–13:30**      | Lunch                         | Buffet lunch onsite                                                        |
 | **Mon 13:30–16:30**      | Tracks Continue               | **Business:** Incentives, compliance & trust frameworks, metrics & communications.<br>**Technical:** Catena-X progress, Decade-X aviation requirements, semantic modeling. |
 | **Mon 16:30–17:00**      | Wrap-up Day 1                 | Track conclusions, facility closes at 17:00                                |
-| **Mon 17:30–19:30**      | Cocktail & Dinner             | Informal networking dinner at nearby restaurant                            |
+| **Mon 17:30–19:30**      | Networking Drinks & Dinner             | Informal networking dinner at nearby restaurant                            |
 | **Tue 09:30–12:30**      | Technical Tracks (Parallel)   | **Developers:** Hosted dataspace services, blueprint working session, Catena-X enablement.<br>**Decision Makers:** Governmental perspectives, standards & trust frameworks. |
 | **Tue 12:30–13:30**      | Lunch & Datacenter Tour       | Buffet lunch + guided tour of Aruba’s Bergamo campus (groups)              |
 | **Tue 13:30–16:00**      | Technical Sessions Continue   | Data plane SDK, CNCF Radius, IDSA/FDOs/AI clinics.                         |
