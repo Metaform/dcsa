@@ -39,7 +39,7 @@ To make the most of the workshop:
 1. **Missed Milan?** All slide decks, recordings and key take-aways are available [here](https://metaform.github.io/dcsa/documentation/overview/milan-2025/).  
 2. **Background  material** is available in our [resources section](https://github.com/Metaform/dcsa/tree/main/content/en/documentation/overview/bergamo-2025/resources) and includes reports, studies, and partner contributions.
 3. A **YouTube video playlist** of short introductions and context is also available:  
-   👉 [Pre-Read Playlist on YouTube](https://www.youtube.com/playlist?list=PL8XAuixTAZx1NtK24W08w7hvyBv-cEDG5)  
+   👉 [Background material on YouTube](https://www.youtube.com/playlist?list=PL8XAuixTAZx1NtK24W08w7hvyBv-cEDG5)  
 4. If you missed the Milan sessions, you can revisit all slide decks, recordings, and take-aways [here](https://metaform.github.io/dcsa/documentation/overview/milan-2025/).  
 ---
 
