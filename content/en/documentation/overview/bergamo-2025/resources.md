@@ -1,6 +1,6 @@
 ---
-title: "Pre-Read Material for the Bergamo event"
-linkTitle: "Pre-Read Material"
+title: "Background Resources for the Bergamo event"
+linkTitle: "Background Resources"
 weight: 100
 description: >-
      This page contains important pre-read documentation and videos to prep yourselves for the Bergamo event and understand the background between DataSpaces. 
