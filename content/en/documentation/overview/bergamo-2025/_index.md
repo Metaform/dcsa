@@ -11,46 +11,39 @@ Dear colleague,
 
 After our first technical workshop earlier in June, the European Cloud Accelerator (ECA) community is reconvening—this time at Aruba’s Global Datacenter headquarters in **Bergamo, Italy**, on **Monday 6 & Tuesday 7 October 2025**.
 The ECA’s mission remains unchanged: to turn trusted, sovereign and interoperable data-sharing into everyday reality for European industry. Our next gathering will move us from concepts to concrete deployments—bringing business leaders and engineers together under one (very large) roof. We will share progress on the [Open Source Eclipse Data Components project](https://github.com/eclipse-edc), which already serves as the base of the Catena-X platform supporting European dataspace initiative.
-
-<span style="color:red">**Note:** The agenda, hotel details, and other information are subject to change.</span>
-
 ---
-## What to Expect
+## High-Level Agenda
 
-| When                 | Track                    | Highlights                                       |
-|----------------------|--------------------------|--------------------------------------------------|
-| **Monday 09:30–10:30** | Plenary Kick-off         | Welcome + project overview for both business & technical stakeholders |
-| **Monday 10:30–12:30** | Business Track / Technical Track | **Business Track:** IDC briefing on the €-scale market for dataspaces hosting under the EU Data Act; fireside perspectives with BMW, Manufacturing-X, Catena-X, OPC Foundation & others.<br>**Technical Track:** Deep dive on Eclipse Dataspace Components (EDC) architecture & roadmap (multi-tenancy, industrial data plane, policy enforcement). |
-| **Monday 12:30–13:30** | Lunch                   | Catered onsite lunch for all participants |
-| **Monday 13:30–17:30** | Business & Technical Tracks Continue | Hands-on sessions with Fulcrum, Liqo, and multi-cloud deployment patterns. Break-outs on multi-tenancy, DevOps pipelines, and governance. |
-| **Monday Evening** | Networking Dinner (Sponsored by Microsoft) | Social dinner at a recommended Bergamo venue, bringing together all participants for informal discussions and networking. |
-| **Tuesday 09:30–12:30** | Technical Track (All Day) | Focused technical sessions on EDC multi-tenancy architecture, control & data plane evolution, SDK deep dives, and operational tooling. Includes talks from Metaform (multi-tenancy + SDK), Aruba (whitelabel management UI), Catena-X (AAS models & adoption insights), and Opiquad (hosting lessons learned). |
-| **Tuesday 12:30–13:30** | Lunch                   | Catered onsite lunch |
-| **Tuesday 13:30–14:30** | Aruba Datacenter Tour (Technical Participants Only) | Guided tour of Aruba’s Bergamo campus with three rotating groups, exploring operations and infrastructure. |
-| **Tuesday 14:30–16:00** | Closing Technical Sessions | Roadmap alignment, design discussions, and wrap-up. |
+| When                     | Track(s)                      | Highlights                                                                 |
+|--------------------------|-------------------------------|----------------------------------------------------------------------------|
+| **Mon 09:00–09:30**      | Arrival & Welcome Coffee      | Registration & networking                                                  |
+| **Mon 09:30–10:30**      | Plenary Kick-off              | Welcome by Aruba, project overview, workshop goals                         |
+| **Mon 10:30–12:30**      | Business Track / Technical Track | **Business Track:** Business models, scale & segmentation, IDC market briefing.<br>**Technical Track:** EDC architecture updates, management UI, onboarding & hosting perspectives. |
+| **Mon 12:30–13:30**      | Lunch                         | Buffet lunch onsite                                                        |
+| **Mon 13:30–16:30**      | Tracks Continue               | **Business:** Incentives, compliance & trust frameworks, metrics & communications.<br>**Technical:** Catena-X progress, Decade-X aviation requirements, semantic modeling. |
+| **Mon 16:30–17:00**      | Wrap-up Day 1                 | Track conclusions, facility closes at 17:00                                |
+| **Mon 17:30–19:30**      | Cocktail & Dinner             | Informal networking dinner at nearby restaurant                            |
+| **Tue 09:30–12:30**      | Technical Tracks (Parallel)   | **Developers:** Hosted dataspace services, blueprint working session, Catena-X enablement.<br>**Decision Makers:** Governmental perspectives, standards & trust frameworks. |
+| **Tue 12:30–13:30**      | Lunch & Datacenter Tour       | Buffet lunch + guided tour of Aruba’s Bergamo campus (groups)              |
+| **Tue 13:30–16:00**      | Technical Sessions Continue   | Data plane SDK, CNCF Radius, IDSA/FDOs/AI clinics.                         |
+| **Tue 16:00–16:30**      | Closing Plenary               | Roadmap alignment, next steps & wrap-up                                    |
 ---
-*(A detailed agenda will follow; expect doors to close by 16:00 CET on Tue 7 Oct.)*
+* The detailed agenda is available [here](../agenda).  
 
 ## Why You Should Attend
-
 - **See real deployments**: Partners will showcase how they are running EDC.  
 - **Meet the ecosystem**: Industry consortia and standards bodies will align on the next steps towards Data-Act compliance and harmonised EU standards.  
 - **Shape the roadmap**: Your input will guide the open-source workstreams launched in Milan—from multi-tenant EDC to conformance tooling.  
-
 ---
 
-## Prepare & Stay Informed
+## Prepare & Stay Informed  
 
-- **Missed Milan?** All slide decks, recordings and key take-aways are available [here](https://metaform.github.io/dcsa/documentation/overview/milan-2025/).  
-- Pre-reads & short videos will be shared a few weeks before the event to help you hit the ground running.  
-- Please plan on getting up-to-date before the Bergamo workshop.  
-
----
-
-## Reserve Your Seat
-
-Places are limited. Please confirm your attendance by **Friday 19 September** via the [registration form](https://forms.office.com/e/P4nTzcJvU0).
-
+To make the most of the workshop:  
+1. **Missed Milan?** All slide decks, recordings and key take-aways are available [here](https://metaform.github.io/dcsa/documentation/overview/milan-2025/).  
+2. **Background  material** is available in our [resources section](https://github.com/Metaform/dcsa/tree/main/content/en/documentation/overview/bergamo-2025/resources) and includes reports, studies, and partner contributions.
+3. A **YouTube video playlist** of short introductions and context is also available:  
+   👉 [Pre-Read Playlist on YouTube](https://www.youtube.com/playlist?list=PL8XAuixTAZx1NtK24W08w7hvyBv-cEDG5)  
+4. If you missed the Milan sessions, you can revisit all slide decks, recordings, and take-aways [here](https://metaform.github.io/dcsa/documentation/overview/milan-2025/).  
 ---
 
 ## Getting There
@@ -85,7 +78,7 @@ More lodging options may be listed, so please check back.
 If you need an invitation letter or have dietary/access requirements, just let us know.  
 We look forward to building on the momentum and seeing how **you** will plug in and contribute.  
 
-See you in Bergamo!  <span style="color:red">**Note:** The agenda, hotel details, and other information are subject to change.</span>
+See you in Bergamo!  
 
 Kind regards,  
 **The European Cloud Accelerator organising team**
