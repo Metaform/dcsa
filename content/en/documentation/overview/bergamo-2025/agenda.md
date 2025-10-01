@@ -206,33 +206,6 @@ Exploration of semantic and data models as enablers for dataspace interoperabili
 
 ---
 
-### Technical Track for **Decision Makers**
-
-#### ⏰ 10:30–12:30 — Overview & Foundations
-**Presenter:** TBD  
-
-**Abstract:**  
-Decision-maker oriented introduction to EDC adoption across European industry. Topics include policy enforcement, governance structures, and sovereign hosting requirements. Discussion of the roles datacenter operators and cloud service providers can play in enabling trusted dataspaces under the Data Act.
-
----
-
-#### ⏰ 12:30–13:30 — 🍽 Lunch Buffet
-
----
-
-#### ⏰ 13:30–16:30 — Regulation, Standards & Cases
-**Presenters:** TBD  
-
-**Abstract:**  
-Panel and presentations on regulatory perspectives, including the Data Act, Digital Product Passport, and sustainability reporting requirements. The session will also survey the standardization landscape (ISO/IEC 20151, OPC UA, AAS) and feature case studies from Manufacturing-X, Catena-X expansion, and Aviation-X. Participants will hear how different industries are adapting to regulatory drivers and aligning with dataspaces.
-
----
-
-#### ⏰ 16:30 — End of Day 1 (Decision Makers)
-*Facility closes at 17:00.*
-
----
-
 ## 🗓 Tuesday, October 7 — TECHNICAL TRACK DAY 2
 
 ### Technical Track for **Developers**
