@@ -30,7 +30,7 @@ Set a simplified, high-level picture of ECA and goals for the two days.
 **Owner:** *Babak Jahromi* — **Presenter:** *Jason or Babak* (10 min)  
 Depots, Eclipse project status, new members, developers, and progress.
 
-> **10:30:** Tracks begin — **Business** remains in plenary room; **Technical** moves to breakout rooms.
+> **10:30:** Tracks begin — **Business** remains in plenary room; **Technical** moves to breakout room.
 
 ---
 
@@ -102,23 +102,6 @@ Depots, Eclipse project status, new members, developers, and progress.
   *Erich Barnstedt (Microsoft)* — Role of semantic/data models for interoperability; Cloud Library Web UI, Industrial Data Plane; hosting considerations.
 
 - **16:30 — End of Day 1 (Developers)**  
-  *Facility closes at 17:00. Please relocate any cars by 17:00.*
-
-**Evening — 🍷 Drinks & Networking Dinner**  
-See details above (cocktail 17:30–18:30, dinner 18:30 at **Ristorante Ponte di Briolo**, 600m walk).
-
----
-
-### Technical Track for **Decision Makers & Program Managers**
-- **10:30–12:30 — Overview & Foundations**  
-  EDC adoption across European industry; policy enforcement & governance; sovereign hosting requirements; role of datacenter operators and CSPs in enabling trust frameworks.
-
-- **12:30–13:30 — 🍽 Lunch Buffet**
-
-- **13:30–16:30 — Regulation, Standards & Cases**  
-  Regulatory perspectives (Data Act, DPP, sustainability reporting); standards landscape (ISO/IEC 20151, CEN/CENELEC JTC25, OPC UA, AAS); case studies (Manufacturing-X, Catena-X expansion, Aviation-X).
-
-- **16:30 — End of Day 1 (Decision Makers)**  
   *Facility closes at 17:00. Please relocate any cars by 17:00.*
 
 **Evening — 🍷 Drinks & Networking Dinner**  
