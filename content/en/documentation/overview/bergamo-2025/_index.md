@@ -8,8 +8,8 @@ description: >-
 ## Bergamo, Italy, Oct 6th & 7th, 2025
 
 
-### After our first technical workshop earlier in June, the European Cloud Accelerator (ECA) community is reconvening—this time at Aruba’s Global Datacenter headquarters in **Bergamo, Italy**, on **Monday 6 & Tuesday 7 October 2025**.
-The ECA’s mission remains unchanged: to turn trusted, sovereign and interoperable data-sharing into everyday reality for European industry. Our next gathering will move us from concepts to concrete deployments—bringing business leaders and engineers together under one (very large) roof. We will share progress on the [Open Source Eclipse Data Components project](https://github.com/eclipse-edc), which already serves as the base of the Catena-X platform supporting European dataspace initiative.
+#### After our first technical workshop earlier in June, the European Cloud Accelerator (ECA) community is reconvening—this time at Aruba’s Global Datacenter headquarters in **Bergamo, Italy**, on **Monday 6 & Tuesday 7 October 2025**.
+### The ECA’s mission remains unchanged: to turn trusted, sovereign and interoperable data-sharing into everyday reality for European industry. Our next gathering will move us from concepts to concrete deployments—bringing business leaders and engineers together under one (very large) roof. We will share progress on the [Open Source Eclipse Data Components project](https://github.com/eclipse-edc), which already serves as the base of the Catena-X platform supporting European dataspace initiative.
 ---
 ## High-Level Agenda
 
