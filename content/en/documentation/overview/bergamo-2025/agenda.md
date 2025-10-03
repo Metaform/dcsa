@@ -23,7 +23,7 @@ description: >-
 **Presenter:** Stefano Sordi (10 min)  
 
 **Abstract:**  
-Aruba will open the event, welcoming participants and outlining why Aruba supports the project. The presentation will provide an introduction to the Bergamo Global Datacenter campus and set the scene for the workshop.
+Explaining why we support the event/project, and briefly say something about the data center campus and its history.
 
 ---
 
@@ -31,7 +31,7 @@ Aruba will open the event, welcoming participants and outlining why Aruba suppor
 **Owner/Presenter:** Jason Matusow (30 min)  
 
 **Abstract:**  
-Jason will set a simplified, high-level picture of the European Cloud Accelerator (ECA), including its objectives and goals for the two days. The session will align participants on the overall workshop purpose and desired outcomes.
+Establish a simplified, high-level picture of the ECA project and to help everyone start with a similar context.
 
 ---
 
@@ -40,7 +40,7 @@ Jason will set a simplified, high-level picture of the European Cloud Accelerato
 **Presenter:** Jason Matusow or Babak Jahromi (10 min)  
 
 **Abstract:**  
-Update on project progress since the Milan workshop: status of the Eclipse project, new members, new developers joining, and progress achieved since June.
+Status and history of the project Progress since Milan, on all fronts (for people newly joining)
 
 ---
 
@@ -56,7 +56,13 @@ Update on project progress since the Milan workshop: status of the Eclipse proje
 **Participants:** Representatives from enterprises, dataspace associations, cloud service providers, trust framework providers, SMEs.  
 
 **Abstract:**  
-Discussion will clarify what each community of actors requires for the success of the European Cloud Accelerator. The goal is to identify perspectives from top-level enterprises, associations, cloud and trust providers, and supply chain participants. The session aims to set a baseline of requirements that cut across these actor groups.
+Business models: clarify what each community of actors needs to make the ECA successful.  
+**Topics include:**  
+- Top-level enterprises  
+- Dataspace Associations  
+- Cloud Service Providers  
+- Trust Framework Providers  
+- Supply chain participants (SMEs)
 
 ---
 
@@ -64,7 +70,9 @@ Discussion will clarify what each community of actors requires for the success o
 **Moderator:** TBD  
 
 **Abstract:**  
-Participants will define what “scale” means for each actor group and how segmentation within the supply chain affects adoption and strategy. The group will agree on key milestones to track solution progress over time, building consensus around measurable steps to success.
+- Clarify what “scale” really means for each of the community actors  
+- Discuss how the segmentation of supply chain elements may require different approaches to achieve scale  
+- Clarify milestones needed for establishing that the solution is on-track over time
 
 ---
 
@@ -72,7 +80,8 @@ Participants will define what “scale” means for each actor group and how seg
 **Presenter:** IDC Analyst (TBD)  
 
 **Abstract:**  
-IDC will present the results of its Phase 1 analysis and conclusions. The session will also preview Phase 2 research targets, and invite inputs from participants on the scope and priorities of further IDC research related to dataspaces and hosting under the Data Act.
+- Phase 1 analysis and conclusions  
+- Phase 2 research targets and inputs
 
 ---
 
@@ -84,7 +93,9 @@ IDC will present the results of its Phase 1 analysis and conclusions. The sessio
 **Moderator:** TBD  
 
 **Abstract:**  
-This session will explore how incentives can be structured to drive desired behaviors within the ECA community. Discussion will prioritize which incentives are most critical (e.g., scaling adoption) and identify possible additional programs to maximize community impact.
+- How can the ECA community use incentives to drive behaviors  
+- Where should incentives be focused to maximize success metrics (i.e., is scale the primary objective)  
+- Are there additional incentive programs to be targeted for maximizing impact of the ECA
 
 ---
 
@@ -92,7 +103,10 @@ This session will explore how incentives can be structured to drive desired beha
 **Moderator:** TBD  
 
 **Abstract:**  
-Focus on sovereignty, compliance, and the role of trust frameworks in labeling and evaluation. The session will align on labeling objectives and methods, including connections to the EU Data Act, European values, and compliance claims. Outcomes will include agreement on evaluation criteria relevant across the community.
+- Sovereignty, compliance…  
+- Role of trust frameworks  
+- Labeling objectives and methods  
+- Data Act, European values, claims
 
 ---
 
@@ -100,7 +114,10 @@ Focus on sovereignty, compliance, and the role of trust frameworks in labeling a
 **Moderator:** TBD  
 
 **Abstract:**  
-Discussion will settle on essential metrics to unify the community, ensuring shared measurement of success. Participants will also determine the reporting methods needed to demonstrate progress and provide evidence to funders and policymakers.
+- How does success looks like?  
+- Can we settle on a limited set of essential metrics that will unify the community of actors on shared objectives  
+- What is needed to measure those metrics  
+- What kind of reporting will be needed to provide evidence back to funding sources for incentive programs, etc.
 
 ---
 
@@ -112,15 +129,12 @@ Discussion will settle on essential metrics to unify the community, ensuring sha
 **Moderator:** TBD  
 
 **Abstract:**  
-Session on communication strategy for the European Cloud Accelerator, including a discussion of a possible public launch event in February 2026. Participants will explore messaging priorities and next steps.
+Possible February public launch of the ECA
 
 ---
 
 ### ⏰ 16:15–16:30 — Next Steps
 **Moderator:** TBD  
-
-**Abstract:**  
-The business track will close with an outline of agreed next steps and action items for the community.
 
 ---
 
@@ -145,7 +159,14 @@ The business track will close with an outline of agreed next steps and action it
 **Owner/Presenter:** Babak Jahromi / Thomas  
 
 **Abstract:**  
-Overview of how the 2-day technical track will run. Recap of progress since Milan and orientation to the structure of the developer sessions. Highly interactive and facilitator-led, the sessions will dive deep into technical challenges, roadmap design, and collaboration across hosting, SDK, and standards efforts.
+Kick-off the two-day technical track. Describe a brief history of ECA, refer attendees to the pre-read covering Milan workshop, and set the stage for the two-day technical workshop, its tracks, goals, and the hands-on nature of the developer track. 
+
+- Track 1 for developers
+- Trak 2 for technical decision makers and program managers
+
+Engineering focused collaboration to help B2B data sharing across Europe based on EU requirements and ideas. It is an OSS initiative and its output is ultimately code that participants can build a product out of.
+
+The tracks are meant to be collaborative and interactive. No long lectures. It should be a discussion. Each session will have a lead/facilitator who starts up the session and guides conversations. Everyone needs to engage. 
 
 ---
 
@@ -153,7 +174,11 @@ Overview of how the 2-day technical track will run. Recap of progress since Mila
 **Presenter:** Marco (Aruba)  
 
 **Abstract:**  
-Presentation of a multi-tenant, SaaS-ready management UI for the Eclipse Dataspace Components (EDC). The UI includes telemetry, health monitoring, and metering/billing capabilities. A demo will show how the UI integrates with Aruba’s cloud via south-bound APIs, enabling CSPs to mount a multi-tenant EDC and offer hosted dataspaces as a service.
+This session will introduce the new "white label" workload management UI that simplifies onboarding and operations for Eclipse Dataspace Components, evolving the project from single-tenant connectors to a multi-tenant, SaaS-ready platform. The UI, contributed as open source, enables organizations to set up, configure, and manage dataspace connectors with ease across hybrid and multi-cloud environments. Attendees will see how this approach lowers adoption barriers, enhances user experience, and provides a reusable foundation that any adopter can customize for their needs.
+
+Will it offer telemetry about the state of EDC workload, its clusters/cells, their  health, etc. It should also include metering and billing interfaces to support billing of the tenants/customers.
+
+This session will include a demo showcasing integration with the south-bound APIs to mount multi-tenant EDC onto Aruba's cloud infrastructure.
 
 ---
 
@@ -161,7 +186,9 @@ Presentation of a multi-tenant, SaaS-ready management UI for the Eclipse Dataspa
 **Presenters:** Opiquad / Fulcrum  
 
 **Abstract:**  
-Fulcrum will share operational requirements for hosting and onboarding dataspaces. Topics include priorities for the control plane, lessons learned from current deployments, and integration of Fulcrum into EDC environments. The session will highlight practical challenges CSPs face in onboarding SMEs into dataspaces at scale.
+Opiquad will share their perspective as a hosting partner, highlighting how they approach onboarding using Fulcrum (Open Source project) and managing dataspace environments. The session will provide insights into the operational requirements for hosters, their control plane priorities, and lessons learned from real-world deployments
+
+FULCRUM/EDC integration
 
 ---
 
@@ -169,7 +196,7 @@ Fulcrum will share operational requirements for hosting and onboarding dataspace
 **Presenter:** Stefan Hoppe  
 
 **Abstract:**  
-Update on OPC UA developments since June. Coverage will include growth of OPC UA into IT and cloud domains, collaborations with Catena-X, VDA, and VDMA, and ongoing work on the EU battery passport. The session will position OPC UA within the broader EDC ecosystem.
+10 min slot for a greeting word but also with the message, that OPC UA is clearly growing to the IT/cloud world and we partner successfully with other partners like Catena-X. In general, the trend is, that associations work together like OPCF & Catena-X & VDA & VDMA e.g. for the battery passport. I am NOT diving into any details – just highlight this need and willingness to cooperate. (and reference the recording Stefan has created)
 
 ---
 
@@ -181,11 +208,30 @@ Update on OPC UA developments since June. Coverage will include growth of OPC UA
 **Presenters:** Thomas + Lars  
 
 **Abstract:**  
-Catena-X will provide an update on its EDC-based deployments. Topics include onboarding via the Cofinity-X marketplace, challenges faced in large-scale rollout, adoption of AAS models, UX needs for hosters, and operational roles within dataspaces. The talk will share practical lessons from applying EDC in production supply chains.
+Catena-X will provide a project update, outlining their engagement, models, and early implementation work. The session will highlight how industry consortia are adopting EDC, what requirements they bring, and how their contributions fit into the broader roadmap of dataspace adoption
+
+Status and progress since Milan workshop back in June
+
+Overview of the onboarding experience of a new participant, including application marketplace from Cofinity-X
+
+List of Challenges
+
+Examples for topics to address:
+- AAS models as data exchange format
+- End user experience and requirements for corresponding UI/UX to be built by hosters
+- Identity management (onboarding, data sourcing, actual sharing)
+- Focus on on-boarding, data sourcing/uploading
+- Various roles who will be hosting/offering components and/or services
 
 ---
 
-#### ⏰ 14:30–15:30 — Open Slot... 
+#### ⏰ 14:30–15:30 — Decade-X: Aviation Requirements & Progress
+**Presenter:** Patrice  
+
+**Abstract:**  
+Theme is requirement gathering  
+- Intro to Decade-X  
+- Why dataspace for aerospace supply chain?
 
 ---
 
@@ -193,7 +239,13 @@ Catena-X will provide an update on its EDC-based deployments. Topics include onb
 **Presenter:** Erich Barnstedt (Microsoft)  
 
 **Abstract:**  
-Exploration of semantic and data models as enablers for dataspace interoperability. Erich will discuss the role of Cloud Library Web UI and Industrial Data Plane, with a focus on how semantic modeling impacts hosting and developer tooling. Concrete examples will be provided to illustrate interoperability challenges and solutions.
+Erich will discuss the role of semantic and data models in enabling interoperability within dataspaces. The session will cover how models are evolving, where they fit in the architecture, and how they enable practical scenarios such as automotive and aviation data sharing
+
+Hosting Cloud Library Web UI which will also enable use of Industrial Data Plane
+
+- Web site  
+- Postgres instance (can start with a shared instance of the database)  
+- Branding, White Label opportunity
 
 ---
 
@@ -210,7 +262,7 @@ Exploration of semantic and data models as enablers for dataspace interoperabili
 **Presenter:** Jim Marino (Metaform)  
 
 **Abstract:**  
-Deep dive into the technical components powering hosted dataspace services. Jim will cover the journey from self-hosted EDC deployments toward multi-tenant architectures that enable hosted offerings. The session will also address operational challenges in scaling dataspaces for SMEs.
+An overview of the components that will power hosted dataspace services and how they will be developed as open source at the Eclipse Foundation. The introduction will cover key technical requirements and highlight the main challenges that will need to be solved when moving from self-hosted EDC deployments to a multi-tenant architecture.
 
 ---
 
@@ -218,12 +270,13 @@ Deep dive into the technical components powering hosted dataspace services. Jim 
 **Facilitator:** Jim Marino (Metaform)  
 
 **Abstract:**  
-Hands-on design session, splitting into three sub-groups:  
-1. **Onboarding** — SME automated signup and credential issuance.  
-2. **Tenant Management** — Infrastructure and service provisioning, monitoring, and management.  
-3. **Operational Experience** — SME workflows (load/share), CSP operations (management UI), and white-labeling scenarios.  
+Design and detail an architecture blueprint for hosted dataspace services. We will breakout into three sub-groups:
 
-Each group will develop proposals and present back to align on an overall blueprint architecture.
+- Onboarding: SME automated signup and credential issuance  
+- Tenant Management: Infrastructure and service provisioning, monitoring, and management  
+- Operational Experience: SME interactions (data loading, sharing), CSP interactions (Management UO), white labeling
+
+Each working group will present their results and we will align on an overall technical architecture for the project.
 
 ---
 
@@ -231,12 +284,13 @@ Each group will develop proposals and present back to align on an overall bluepr
 **Presenter:** Thomas / Lars  
 
 **Abstract:**  
-Working session applying the blueprint to Catena-X’s 2026 roadmap. Focus on self-hosted wallets, AAS industrial data sharing for SMEs, and enablement tooling. The goal is to define a concrete roadmap to scale SME participation.
+This session will focus on applying the architecture blueprint to Catena-X. It will begin with an overview of the Catena-X 2026 roadmap, including support for self-hosted wallets and the main use cases that will be enabled in the network. We will then deep-dive to into requirements for AAS industrial data sharing for SMEs in Catena-X. A roadmap will be devised for enabling the architecture blueprint with Catena-X.
 
 ---
 
 #### ⏰ 12:30–13:30 — Aruba Datacenter Tour
-**Note:** Registration via QR code required. Attendees split into three escorted groups.  
+**Note:** QR code is needed (need to register in advance - link in Welcome email).  
+Attendees will be divided into 3 groups, each escorted by an Aruba employee to access the secure facility. QR code is needed to get passed data center security. Hence the need for participants names, email, etc.
 
 ---
 
@@ -248,7 +302,10 @@ Working session applying the blueprint to Catena-X’s 2026 roadmap. Focus on se
 **Presenter:** Jim Marino (Metaform)  
 
 **Abstract:**  
-Hands-on exploration of the Data Plane SDK. Jim will cover support for multiple data types (HTTP, streaming), discuss ongoing standardization efforts, and walk through code examples showing how to build custom data plane connectors.
+This session provides a deep dive into the Data Plane SDK and how to develop custom data planes. This hands-on technical session will cover:
+- An overview of different data types (HTTP-based, streaming)  
+- Standardization efforts at Eclipse  
+- A code walkthrough
 
 ---
 
@@ -256,7 +313,9 @@ Hands-on exploration of the Data Plane SDK. Jim will cover support for multiple 
 **Presenter:** Zach Casper  
 
 **Abstract:**  
-Presentation of Radius, a CNCF sandbox project designed as a cloud-native application platform. Zach will show how Radius supports workload portability, simplifies federated deployments, and lowers the cost of operating dataspaces in multi-cloud environments.
+30 min - Presenting Radius and how it could help with workload portability and ease the cost of cloud federations in Europe and elsewhere .
+
+Microsoft's Azure Office of CTO introduces Radius, a Cloud Native Computing Foundation (CNCF) sandbox open-source project that revolutionizes how developers and platform engineers collaborate on cloud-native applications. This session demonstrates how Radius serves as a cloud-native application platform that enables teams to deliver and manage applications following corporate best practices for security, cost, and operations by default.
 
 ---
 
@@ -264,7 +323,7 @@ Presentation of Radius, a CNCF sandbox project designed as a cloud-native applic
 **Facilitator:** Jim Marino (Metaform)  
 
 **Abstract:**  
-Closing reflection on the developer track: what was learned, alignment on next steps, and agreement on how workstreams will continue post-event.
+Closing of the day, look back, future plans
 
 ---
 
@@ -278,7 +337,9 @@ Closing reflection on the developer track: what was learned, alignment on next s
 **Presenter:** Jon Kuiper  
 
 **Abstract:**  
-Overview of the European Data Innovation Board’s (EDIB/EDIC) perspective on dataspaces for Mobility & Logistics. The talk will highlight cross-border use cases, standardization needs, and the role of IT service providers in offering “Dataspaces as a Service.”
+In my presentation I will address the initiative of multiple European member states to create an “European Digital Infrastructure Consortium”(EDIC) in the domain of Mobility and Logistics. This EDIC and the cross-border use cases they will implement and subsidize, need to lead to standardisation and interoperability between isolated national initiatives. 
+
+I will also address the role IT service providers can play in developing “Data Spaces as a Service” and how business development can support the EDIC initiative.
 
 ---
 
@@ -286,7 +347,10 @@ Overview of the European Data Innovation Board’s (EDIB/EDIC) perspective on da
 **Presenter:** Peter Koen  
 
 **Abstract:**  
-Update on standards and open-source work relevant to dataspaces, including ISO/IEC 20151, DSP, DCP, and EDWG. The talk will show how these standards intersect with EDC and provide guidance for organizations preparing for compliance.
+- 20151  
+- DSP  
+- DCP  
+- EDWG
 
 ---
 
@@ -294,12 +358,13 @@ Update on standards and open-source work relevant to dataspaces, including ISO/I
 **Presenter:** Gerard (iSHARE)  
 
 **Abstract:**  
-How iSHARE can support dataspaces and participants in building trust. Gerard will explain iSHARE’s role as a trust framework and its practical use in onboarding and governance.
+Present iShare and what it could do for the participants of this workshop
 
 ---
 
 #### ⏰ 12:30–13:30 — Aruba Datacenter Tour
-**Note:** Registration via QR code required. Three escorted groups (see welcome email).
+**Note:** QR code is needed (need to register in advance - link in Welcome email).  
+Attendees will be divided into 3 groups, each escorted by an Aruba employee to access the secure facility. QR code is needed to get passed data center security. Hence the need for participants names, email, etc.
 
 ---
 
@@ -311,7 +376,7 @@ How iSHARE can support dataspaces and participants in building trust. Gerard wil
 **Presenter:** Lars Nagel (IDSA)  
 
 **Abstract:**  
-Presentation on what the International Data Spaces Association (IDSA) can do for participants. Lars will outline IDSA’s standards, certification approach, and contributions to EDC adoption.
+Present IDSA and what it can do for the participants
 
 ---
 
@@ -319,21 +384,20 @@ Presentation on what the International Data Spaces Association (IDSA) can do for
 **Presenter:** Sven Bingert  
 
 **Abstract:**  
-Session on the Global Integrated Dataspace concept and the role of Federated Data Objects (FDOs). Sven will explain how FDOs enable secure and automated onboarding in global ecosystems.
+Global Integrated Dataspace and FDOs
 
 ---
 
-#### ⏰ 15:00 —Decade-X (Aviation): Requirements & Progress
+#### ⏰ 15:00 — Decade-X (Aviation): Requirements & Progress
 **Presenter:** Patrice  
 
 **Abstract:**  
-Presentation of Decade-X’s work on creating a dataspace for the aerospace supply chain. Discussion will cover why aviation requires sovereign data sharing, early requirements gathered, and progress toward operationalization. The session links lessons from Manufacturing-X and Catena-X into the aerospace domain.
+Requirements and progress report from Decade-X aviation dataspace
+
+---
 
 #### ⏰ 15:30 — Dataspaces & AI
 **Presenter:** Peter Koen  
-
-**Abstract:**  
-Exploration of how dataspaces intersect with artificial intelligence. The session will highlight how shared data infrastructures can accelerate AI adoption while maintaining sovereignty and compliance.
 
 ---
 
@@ -341,7 +405,7 @@ Exploration of how dataspaces intersect with artificial intelligence. The sessio
 **Facilitator:** Peter Koen  
 
 **Abstract:**  
-Interactive clinic where participants can ask all the questions they’ve wanted to ask about dataspaces, EDC, standards, and operationalization. The session will serve as an open forum with experts.
+Ask all the questions you always wanted to ask… 
 
 ---
 
