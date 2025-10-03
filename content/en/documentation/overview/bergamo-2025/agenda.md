@@ -68,7 +68,6 @@ Status and history of the project Progress since Milan, on all fronts (for peopl
 *Format: 45-minute open discussion/panel sessions with abstracts preserved.*
 
 ### ⏰ 10:30–11:15 — Business Models
-**Moderator:** TBD  
 **Participants:** Representatives from enterprises, dataspace associations, cloud service providers, trust framework providers, SMEs.  
 
 **Abstract:**  
@@ -83,7 +82,6 @@ Business models: clarify what each community of actors needs to make the ECA suc
 ---
 
 ### ⏰ 11:15–12:00 — Scale & Segmentation
-**Moderator:** TBD  
 
 **Abstract:**  
 - Clarify what “scale” really means for each of the community actors  
@@ -106,7 +104,6 @@ Business models: clarify what each community of actors needs to make the ECA suc
 ---
 
 ### ⏰ 13:30–14:15 — Incentives
-**Moderator:** TBD  
 
 **Abstract:**  
 - How can the ECA community use incentives to drive behaviors  
@@ -116,7 +113,6 @@ Business models: clarify what each community of actors needs to make the ECA suc
 ---
 
 ### ⏰ 14:15–15:00 — Labeling & Evaluation
-**Moderator:** TBD  
 
 **Abstract:**  
 - Sovereignty, compliance…  
@@ -127,7 +123,6 @@ Business models: clarify what each community of actors needs to make the ECA suc
 ---
 
 ### ⏰ 15:00–15:30 — Metrics, Measurement & Reporting
-**Moderator:** TBD  
 
 **Abstract:**  
 - How does success looks like?  
@@ -142,7 +137,6 @@ Business models: clarify what each community of actors needs to make the ECA suc
 ---
 
 ### ⏰ 15:45–16:15 — Marketing & Communications
-**Moderator:** TBD  
 
 **Abstract:**  
 Possible February public launch of the ECA
@@ -150,7 +144,6 @@ Possible February public launch of the ECA
 ---
 
 ### ⏰ 16:15–16:30 — Next Steps
-**Moderator:** TBD  
 
 ---
 
@@ -172,13 +165,13 @@ Possible February public launch of the ECA
 ### Technical Track for **Developers**
 
 #### ⏰ 10:30–10:45 — ECA Technical Track Kick-off
-**Owner/Presenter:** Babak Jahromi / Thomas  
+**Owner/Presenter:** Babak Jahromi / Thomas Obermeyer
 
 **Abstract:**  
 Kick-off the two-day technical track. Describe a brief history of ECA, refer attendees to the pre-read covering Milan workshop, and set the stage for the two-day technical workshop, its tracks, goals, and the hands-on nature of the developer track. 
 
 - Track 1 for developers
-- Trak 2 for technical decision makers and program managers
+- Track 2 for technical decision makers and program managers
 
 Engineering focused collaboration to help B2B data sharing across Europe based on EU requirements and ideas. It is an OSS initiative and its output is ultimately code that participants can build a product out of.
 
