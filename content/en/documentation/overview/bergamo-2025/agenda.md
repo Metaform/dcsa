@@ -185,11 +185,7 @@ Catena-X will provide an update on its EDC-based deployments. Topics include onb
 
 ---
 
-#### ⏰ 14:30–15:30 — Decade-X (Aviation): Requirements & Progress
-**Presenter:** Patrice  
-
-**Abstract:**  
-Presentation of Decade-X’s work on creating a dataspace for the aerospace supply chain. Discussion will cover why aviation requires sovereign data sharing, early requirements gathered, and progress toward operationalization. The session links lessons from Manufacturing-X and Catena-X into the aerospace domain.
+#### ⏰ 14:30–15:30 — Open Slot... 
 
 ---
 
@@ -327,7 +323,13 @@ Session on the Global Integrated Dataspace concept and the role of Federated Dat
 
 ---
 
-#### ⏰ 15:00 — Dataspaces & AI
+#### ⏰ 15:00 —Decade-X (Aviation): Requirements & Progress
+**Presenter:** Patrice  
+
+**Abstract:**  
+Presentation of Decade-X’s work on creating a dataspace for the aerospace supply chain. Discussion will cover why aviation requires sovereign data sharing, early requirements gathered, and progress toward operationalization. The session links lessons from Manufacturing-X and Catena-X into the aerospace domain.
+
+#### ⏰ 15:30 — Dataspaces & AI
 **Presenter:** Peter Koen  
 
 **Abstract:**  
@@ -335,7 +337,7 @@ Exploration of how dataspaces intersect with artificial intelligence. The sessio
 
 ---
 
-#### ⏰ 15:30 — Dataspace Clinic
+#### ⏰ 16:00 — Dataspace Clinic
 **Facilitator:** Peter Koen  
 
 **Abstract:**  
