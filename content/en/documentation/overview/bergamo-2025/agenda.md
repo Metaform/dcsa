@@ -12,6 +12,22 @@ description: >-
 > **Dinner (Mon):** Ristorante Ponte di Briolo — walking distance **600m (~9 min)**. [Walking route map (PNG)](../map/)
 
 ---
+## 📌 Workshop Structure at a Glance
+
+- **Monday, October 6**  
+  - **09:00–10:30** — **Plenary (all participants together)**  
+  - **10:30–16:30** — Two parallel tracks:  
+    - **Business Track** (Plenary Room)  
+    - **Technical Track** (Breakout Rooms)  
+
+- **Tuesday, October 7**  
+  - Two dedicated technical streams:  
+    - **Technical Track for Developers** — 09:30–16:30  
+    - **Technical Track for Decision Makers** — 09:30–16:30  
+
+📍 *Facility closes at 17:00 each day.*  
+
+---
 
 ## 🗓 Monday, October 6 — Plenary (Big Room)
 
@@ -225,17 +241,7 @@ Examples for topics to address:
 
 ---
 
-#### ⏰ 14:30–15:30 — Decade-X: Aviation Requirements & Progress
-**Presenter:** Patrice  
-
-**Abstract:**  
-Theme is requirement gathering  
-- Intro to Decade-X  
-- Why dataspace for aerospace supply chain?
-
----
-
-#### ⏰ 15:30–16:30 — Modeling Data for Dataspaces
+#### ⏰ 14:30–15:30 — Modeling Data for Dataspaces
 **Presenter:** Erich Barnstedt (Microsoft)  
 
 **Abstract:**  
@@ -247,6 +253,9 @@ Hosting Cloud Library Web UI which will also enable use of Industrial Data Plane
 - Postgres instance (can start with a shared instance of the database)  
 - Branding, White Label opportunity
 
+---
+
+#### ⏰ 15:30 — Open discussion
 ---
 
 #### ⏰ 16:30 — End of Day 1 (Developers)
@@ -330,6 +339,7 @@ Closing of the day, look back, future plans
 #### ⏰ 16:15–16:30 — Buffer / End of Day 2 (Developers)
 
 ---
+## 🗓 Tuesday, October 7 — TECHNICAL TRACK DA
 
 ### Technical Track for **Decision Makers**
 
@@ -389,10 +399,10 @@ Global Integrated Dataspace and FDOs
 ---
 
 #### ⏰ 15:00 — Decade-X (Aviation): Requirements & Progress
-**Presenter:** Patrice  
+**Presenter:** Patrice Brossier
 
 **Abstract:**  
-Requirements and progress report from Decade-X aviation dataspace
+Requirements and progress report from Decade-X aviation dataspace. Theme is requirement gathering Intro to Decade-X. Why dataspace for aerospace supply chain?
 
 ---
 
