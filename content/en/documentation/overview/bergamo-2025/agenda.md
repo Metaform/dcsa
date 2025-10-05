@@ -91,7 +91,7 @@ Business models: clarify what each community of actors needs to make the ECA suc
 ---
 
 ### ⏰ 12:00–12:30 — IDC Presentation
-**Presenter:** IDC Analyst (TBD)  
+**Presenter:** IDC Analyst  
 
 **Abstract:**  
 - Phase 1 analysis and conclusions  
@@ -180,7 +180,7 @@ The tracks are meant to be collaborative and interactive. No long lectures. It s
 ---
 
 #### ⏰ 10:45–11:30 — White-label Management UI for EDC
-**Presenter:** Marco (Aruba)  
+**Presenter:** Marco Mangiulli (Aruba)  
 
 **Abstract:**  
 This session will introduce the new "white label" workload management UI that simplifies onboarding and operations for Eclipse Dataspace Components, evolving the project from single-tenant connectors to a multi-tenant, SaaS-ready platform. The UI, contributed as open source, enables organizations to set up, configure, and manage dataspace connectors with ease across hybrid and multi-cloud environments. Attendees will see how this approach lowers adoption barriers, enhances user experience, and provides a reusable foundation that any adopter can customize for their needs.
@@ -214,7 +214,7 @@ FULCRUM/EDC integration
 ---
 
 #### ⏰ 13:30–14:30 — Catena-X: Progress & Contributions
-**Presenters:** Thomas + Lars  
+**Presenters:** Thomas Obermeyer + Lars Geyer-Blaumeiser + Mathias Brunkow Moser  
 
 **Abstract:**  
 Catena-X will provide a project update, outlining their engagement, models, and early implementation work. The session will highlight how industry consortia are adopting EDC, what requirements they bring, and how their contributions fit into the broader roadmap of dataspace adoption
@@ -283,7 +283,7 @@ Each working group will present their results and we will align on an overall te
 ---
 
 #### ⏰ 11:30–12:30 — Catena-X Enablement Working Session
-**Presenter:** Thomas / Lars  
+**Presenter:** Thomas Obermeyer + Lars Geyer-Blaumeiser + Mathias Brunkow Moser  
 
 **Abstract:**  
 This session will focus on applying the architecture blueprint to Catena-X. It will begin with an overview of the Catena-X 2026 roadmap, including support for self-hosted wallets and the main use cases that will be enabled in the network. We will then deep-dive to into requirements for AAS industrial data sharing for SMEs in Catena-X. A roadmap will be devised for enabling the architecture blueprint with Catena-X.
@@ -312,7 +312,7 @@ This session provides a deep dive into the Data Plane SDK and how to develop cus
 ---
 
 #### ⏰ 15:30–16:00 — CNCF Radius
-**Presenter:** Zach Casper  
+**Presenter:** Zach Casper (Microsoft)
 
 **Abstract:**  
 30 min - Presenting Radius and how it could help with workload portability and ease the cost of cloud federations in Europe and elsewhere .
@@ -358,7 +358,7 @@ I will also address the role IT service providers can play in developing “Data
 ---
 
 #### ⏰ 10:30 — Trust Frameworks (iSHARE)
-**Presenter:** Gerard (iSHARE)  
+**Presenter:** Gerard van der Hoeven (iSHARE)  
 
 **Abstract:**  
 Present iShare and what it could do for the participants of this workshop
