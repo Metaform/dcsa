@@ -1,3 +1,10 @@
+---
+title: "Eclipse Data Components Status"
+linkTitle: "Project Status"
+weight: 1
+description: >-
+  Status of the EDC release for the Data Spaces Event in Madrid in February.
+---
 # Eclipse Dataspace Components – Madrid Development Dashboard for February
 
 ## Purpose
