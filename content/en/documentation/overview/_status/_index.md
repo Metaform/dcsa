@@ -3,7 +3,7 @@ title: "Eclipse Data Components Status"
 linkTitle: "Project Status"
 weight: 1
 description: >-
-  Status of the EDC release for the Data Spaces Event in Madrid in February.
+  Status of the EDC release for the Data Spaces Symposium Event in Madrid on 10/11th of February.
 ---
 # Eclipse Dataspace Components – Madrid Development Dashboard for February
 
@@ -76,6 +76,8 @@ description: >-
 ---
 
 ## 3. February 2026 Madrid Demo – Readiness Snapshot
+The demo will be given at the Data Space Symposium 10th & 11th of February in Madrid.
+https://www.data-spaces-symposium.eu/
 
 ### Scenario Focus
 - Certificate-driven trusted data sharing in a supply-chain context.
