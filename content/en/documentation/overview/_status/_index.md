@@ -31,7 +31,7 @@ description: >-
 | 6 | Data Plane Core / SDKs | https://github.com/eclipse-dataplane-core | Issues per SDK repo | GREEN | Available, used experimentally alongside classic data plane |
 | 7 | Protocol TCKs (DSP / DCP / DPS) | https://github.com/eclipse-dataspacetck/dsp-tck | Issues per TCK repo | GREEN | Protocol conformance validation |
 | 8 | Participant & CSP Portals (UI) | To be contributed (Aruba UI + CFM frontend) | n/a | GREEN | Essential onboarding and basic catalog/transfer flows |
-| 9 | Industrial Data Plane & OPC UA Cloud Library | https://github.com/OPCFoundation/UA-CloudLibrary | https://github.com/OPCFoundation/UA-CloudLibrary/milestone/2 | ORANGE | Scenario-specific integration for February |
+| 9 | Industrial Data Plane & OPC UA Cloud Library | https://github.com/OPCFoundation/UA-CloudLibrary | https://github.com/OPCFoundation/UA-CloudLibrary/milestone/2 | GREEN | Scenario-specific integration for February |
 
 ---
 
